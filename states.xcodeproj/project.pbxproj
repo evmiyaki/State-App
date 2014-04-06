@@ -47,7 +47,7 @@
 		BF841C3918EE1DE6009F207F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BF841C3C18EE1DE6009F207F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF841C3E18EE1DE6009F207F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BF841C3F18EE1DE6009F207F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BF841C3F18EE1DE6009F207F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = states/ViewController.m; sourceTree = SOURCE_ROOT; };
 		BF841C4118EE1DE6009F207F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BF841C4718EE1DE6009F207F /* statesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = statesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF841C4818EE1DE6009F207F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -116,6 +116,7 @@
 		BF841C2F18EE1DE6009F207F /* states */ = {
 			isa = PBXGroup;
 			children = (
+				BFFBFDF018F1187D00803956 /* iPad */,
 				BF841C3818EE1DE6009F207F /* AppDelegate.h */,
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
@@ -154,6 +155,13 @@
 				BF841C5118EE1DE6009F207F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFFBFDF018F1187D00803956 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,7 +393,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "states/states-Prefix.pch";
 				INFOPLIST_FILE = "states/states-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -398,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "states/states-Prefix.pch";
 				INFOPLIST_FILE = "states/states-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -464,6 +476,7 @@
 				BF841C5A18EE1DE6009F207F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF841C5B18EE1DE6009F207F /* Build configuration list for PBXNativeTarget "statesTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +485,7 @@
 				BF841C5D18EE1DE6009F207F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
