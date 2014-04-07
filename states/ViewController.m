@@ -7,11 +7,9 @@
 //
 
 #import "ViewController.h"
-#define METERS_PER_MILE 1609.344
 
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 
 @end
@@ -25,14 +23,6 @@
 
     
     
-}
-
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.coordinate,
-                                                                       0.5*METERS_PER_MILE,
-                                                                       0.5*METERS_PER_MILE);
-    [self.mapView setRegion:viewRegion animated:YES];
 }
 
 

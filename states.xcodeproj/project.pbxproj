@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70A4D618F36BC500440FC1 /* MapViewController.m */; };
 		BF841C2A18EE1DE6009F207F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2918EE1DE6009F207F /* Foundation.framework */; };
 		BF841C2C18EE1DE6009F207F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2B18EE1DE6009F207F /* CoreGraphics.framework */; };
 		BF841C2E18EE1DE6009F207F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2D18EE1DE6009F207F /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF70A4D518F36BC500440FC1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		BF70A4D618F36BC500440FC1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BF841C2618EE1DE6009F207F /* states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = states.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF841C2918EE1DE6009F207F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BF841C2B18EE1DE6009F207F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				BF841C3818EE1DE6009F207F /* AppDelegate.h */,
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
+				BF70A4D518F36BC500440FC1 /* MapViewController.h */,
+				BF70A4D618F36BC500440FC1 /* MapViewController.m */,
 				BF841C3E18EE1DE6009F207F /* ViewController.h */,
 				BF841C3F18EE1DE6009F207F /* ViewController.m */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -264,6 +269,7 @@
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
+				BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

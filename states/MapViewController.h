@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  MapViewController.h
 //  states
 //
-//  Created by Evan Miyaki on 4/3/14.
+//  Created by Evan Miyaki on 4/7/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -10,6 +10,6 @@
 #import <MapKit/MapKit.h>
 
 
-@interface ViewController : UIViewController 
+@interface MapViewController : UIViewController <MKMapViewDelegate>
 
 @end
