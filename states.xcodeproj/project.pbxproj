@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1813F2190112FF00B1654C /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */; };
+		BF62336E1907302E00172C79 /* StateTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62336D1907302E00172C79 /* StateTVC.m */; };
+		BF66A5EF1905DCA100F05C43 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66A5EE1905DCA100F05C43 /* State.m */; };
+		BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66A5F21905DDBF00F05C43 /* State+Create.m */; };
 		BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70A4D618F36BC500440FC1 /* MapViewController.m */; };
 		BF841C2A18EE1DE6009F207F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2918EE1DE6009F207F /* Foundation.framework */; };
 		BF841C2C18EE1DE6009F207F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2B18EE1DE6009F207F /* CoreGraphics.framework */; };
@@ -36,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
+		BF62336C1907302E00172C79 /* StateTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTVC.h; sourceTree = "<group>"; };
+		BF62336D1907302E00172C79 /* StateTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTVC.m; sourceTree = "<group>"; };
+		BF66A5ED1905DCA100F05C43 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BF66A5EE1905DCA100F05C43 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BF66A5F11905DDBF00F05C43 /* State+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "State+Create.h"; sourceTree = "<group>"; };
+		BF66A5F21905DDBF00F05C43 /* State+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "State+Create.m"; sourceTree = "<group>"; };
 		BF70A4D518F36BC500440FC1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		BF70A4D618F36BC500440FC1 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		BF841C2618EE1DE6009F207F /* states.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = states.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +96,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF66A5F01905DD9500F05C43 /* AutoGen */ = {
+			isa = PBXGroup;
+			children = (
+				BF66A5EE1905DCA100F05C43 /* State.m */,
+				BF66A5ED1905DCA100F05C43 /* State.h */,
+			);
+			name = AutoGen;
+			sourceTree = "<group>";
+		};
+		BF66A5F41905DDD500F05C43 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BF66A5F21905DDBF00F05C43 /* State+Create.m */,
+				BF66A5F11905DDBF00F05C43 /* State+Create.h */,
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		BF841C1D18EE1DE6009F207F = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +152,13 @@
 				BF841C3818EE1DE6009F207F /* AppDelegate.h */,
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
-				BF70A4D518F36BC500440FC1 /* MapViewController.h */,
+				BF62336C1907302E00172C79 /* StateTVC.h */,
+				BF62336D1907302E00172C79 /* StateTVC.m */,
+				BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */,
+				BF66A5F01905DD9500F05C43 /* AutoGen */,
+				BF66A5F41905DDD500F05C43 /* Custom */,
 				BF70A4D618F36BC500440FC1 /* MapViewController.m */,
+				BF70A4D518F36BC500440FC1 /* MapViewController.h */,
 				BF841C3E18EE1DE6009F207F /* ViewController.h */,
 				BF841C3F18EE1DE6009F207F /* ViewController.m */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -266,8 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF1813F2190112FF00B1654C /* StateModel.xcdatamodeld in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
+				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
+				BF66A5EF1905DCA100F05C43 /* State.m in Sources */,
+				BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
 				BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */,
 			);
@@ -494,6 +532,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */,
+			);
+			currentVersion = BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */;
+			path = StateModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BF841C1E18EE1DE6009F207F /* Project object */;
 }

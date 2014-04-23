@@ -11,5 +11,6 @@
 
 
 @interface ViewController : UIViewController 
+@property (nonatomic, strong) NSManagedObjectContext *context;
 
 @end
