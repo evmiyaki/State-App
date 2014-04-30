@@ -21,25 +21,25 @@
 @implementation StateTVC
 
 
+- (void)updateStateInfo
+{
+    self.stateNameLabel.text = self.state.name;
+    self.stateNicknameLabel.text = self.state.statenickname;
+    self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [self updateStateInfo];
 }
+
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
 }
-
--(void)setState:(State *)state
-{
-    _state=state;
-    self.stateNameLabel.text = self.state.name;
-    self.stateNicknameLabel.text = self.state.statenickname;
-    self.statePopulationLabel.text = self.state.population;
-    
-}
-
 
 #pragma mark - Table view data source
 
