@@ -17,13 +17,6 @@
 
 @implementation ViewController
 
-- (void)setContext:(NSManagedObjectContext *)context
-{
-    _context = context;
-    NSLog(@"context set!");
-    self.states = [State allStatesInManagedObjectContext:self.context];
-    [self.stateTableView reloadData];
-}
 
 
 - (void)viewDidLoad

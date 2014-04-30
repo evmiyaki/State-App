@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "State.h"
 
 @interface StateTVC : UITableViewController
+@property(nonatomic, strong) State *state;
 
 @end

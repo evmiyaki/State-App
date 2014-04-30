@@ -7,38 +7,39 @@
 //
 
 #import "StateTVC.h"
+#import "State+Create.h"
+
 
 @interface StateTVC ()
+@property (nonatomic, strong) NSArray *states;
+@property (weak, nonatomic) IBOutlet UILabel *stateNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *stateNicknameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statePopulationLabel;
 
 @end
 
 @implementation StateTVC
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	// Do any additional setup after loading the view, typically from a nib.
+}
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBar.hidden = YES;
 }
 
-- (void)didReceiveMemoryWarning
+-(void)setState:(State *)state
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    _state=state;
+    self.stateNameLabel.text = self.state.name;
+    self.stateNicknameLabel.text = self.state.statenickname;
+    self.statePopulationLabel.text = self.state.population;
+    
 }
+
 
 #pragma mark - Table view data source
 

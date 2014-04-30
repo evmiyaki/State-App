@@ -30,7 +30,7 @@
                                                   inManagedObjectContext:managedObjectContext];
             state.name = name;
             state.population = @(population);
-            state.statenickname = @[statenickname];
+            state.statenickname = statenickname;
             
         } else {
             state = [matches lastObject];
@@ -54,7 +54,7 @@
         NSAssert(NO, @"wrong number of school day matches returned.");
         
     } else {
-        NSLog(@"school days loaded: %lu", (unsigned long)[matches count]);
+        NSLog(@"states loaded: %lu", (unsigned long)[matches count]);
         states = matches;
     }
     
