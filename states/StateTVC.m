@@ -11,7 +11,6 @@
 
 
 @interface StateTVC ()
-@property (nonatomic, strong) NSArray *states;
 @property (weak, nonatomic) IBOutlet UILabel *stateNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateNicknameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statePopulationLabel;
@@ -40,8 +39,6 @@
 {
     self.navigationController.navigationBar.hidden = YES;
 }
-
-#pragma mark - Table view data source
 
 
 @end
