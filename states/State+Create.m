@@ -10,7 +10,7 @@
 
 @implementation State (Create)
 
-+ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 {
     State *state = nil;
     if ([name length]) {
@@ -31,6 +31,9 @@
             state.name = name;
             state.population = @(population);
             state.statenickname = statenickname;
+            state.history = history;
+            state.since = @(since);
+            state.governor = governor;
             
         } else {
             state = [matches lastObject];

@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="826" y="104"/>
         </scene>
-        <!--NavigationTVC - General Info-->
+        <!--GITVC - General Info-->
         <scene sceneID="shr-2U-diS">
             <objects>
-                <tableViewController id="m50-hd-8bF" customClass="NavigationTVC" sceneMemberID="viewController">
+                <tableViewController id="m50-hd-8bF" customClass="GITVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1km-ju-3Eg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -314,6 +314,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="General Info" id="8oD-0E-zN7"/>
+                    <connections>
+                        <outlet property="sinceTableView" destination="36v-HH-ytm" id="EtQ-7x-W3J"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8U-bB-HGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -488,48 +491,6 @@
             </objects>
             <point key="canvasLocation" x="1867" y="-1504"/>
         </scene>
-        <!--NavigationTVC - History-->
-        <scene sceneID="i0i-FE-UJy">
-            <objects>
-                <tableViewController id="vnx-wr-W1f" customClass="NavigationTVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fLj-Ag-kyj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <sections>
-                            <tableViewSection id="4Jx-CH-Zpv">
-                                <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="KzP-xx-Mxy" style="IBUITableViewCellStyleDefault" id="hTE-J5-EXH">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hTE-J5-EXH" id="ghE-Yl-Y59">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="put history here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KzP-xx-Mxy">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="vnx-wr-W1f" id="2pQ-1b-HgT"/>
-                            <outlet property="delegate" destination="vnx-wr-W1f" id="HOt-T6-xCx"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="History" id="Wzv-3Y-bqB"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dBr-2y-Noc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1867" y="765"/>
-        </scene>
         <!--NavigationTVC - Specialties-->
         <scene sceneID="pyB-mH-M0j">
             <objects>
@@ -639,6 +600,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AlU-xu-PB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1860" y="50"/>
+        </scene>
+        <!--HistoryVC - History-->
+        <scene sceneID="Ant-f0-53d">
+            <objects>
+                <viewController id="nSP-1U-sWV" customClass="HistoryVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="94B-nu-ddf"/>
+                        <viewControllerLayoutGuide type="bottom" id="ptg-85-e05"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3a9-Qz-CxL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxW-hk-Yxm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="History" id="Yg7-Fi-kMy"/>
+                    <connections>
+                        <outlet property="historyTextView" destination="hxW-hk-Yxm" id="xbL-46-Jie"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rf8-mp-5wj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="719"/>
         </scene>
         <!--StateTVC-->
         <scene sceneID="YWp-wY-nB9">
@@ -801,7 +794,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="vnx-wr-W1f" kind="push" id="mJ5-9k-b7I"/>
+                                                        <segue destination="nSP-1U-sWV" kind="push" identifier="gotohistory" id="mfF-zn-3gX"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsP-VO-dnW">

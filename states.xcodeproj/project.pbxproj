@@ -38,6 +38,8 @@
 		BF841C5F18EE2475009F207F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C5E18EE2475009F207F /* MapKit.framework */; };
 		BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE61909CAAD0088A531 /* NavigationTVC.m */; };
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
+		BFF5AB51191853000019C483 /* GITVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB50191853000019C483 /* GITVC.m */; };
+		BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB53191854ED0019C483 /* HistoryVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,10 @@
 		BF898AE61909CAAD0088A531 /* NavigationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTVC.m; sourceTree = "<group>"; };
 		BF898AE81909CEA50088A531 /* StateListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateListTVC.h; sourceTree = "<group>"; };
 		BF898AE91909CEA50088A531 /* StateListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListTVC.m; sourceTree = "<group>"; };
+		BFF5AB4F191853000019C483 /* GITVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITVC.h; sourceTree = "<group>"; };
+		BFF5AB50191853000019C483 /* GITVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITVC.m; sourceTree = "<group>"; };
+		BFF5AB52191854ED0019C483 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
+		BFF5AB53191854ED0019C483 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,16 +145,20 @@
 		BF66A5F01905DD9500F05C43 /* AutoGen */ = {
 			isa = PBXGroup;
 			children = (
+				BFF5AB4F191853000019C483 /* GITVC.h */,
+				BFF5AB50191853000019C483 /* GITVC.m */,
 				BF898AE81909CEA50088A531 /* StateListTVC.h */,
 				BF898AE91909CEA50088A531 /* StateListTVC.m */,
 				BF898AE51909CAAD0088A531 /* NavigationTVC.h */,
-				BF70A4D618F36BC500440FC1 /* MapViewController.m */,
 				BF70A4D518F36BC500440FC1 /* MapViewController.h */,
+				BF70A4D618F36BC500440FC1 /* MapViewController.m */,
 				BF841C3E18EE1DE6009F207F /* ViewController.h */,
 				BF841C3F18EE1DE6009F207F /* ViewController.m */,
 				BF898AE61909CAAD0088A531 /* NavigationTVC.m */,
 				BF62336C1907302E00172C79 /* StateTVC.h */,
 				BF62336D1907302E00172C79 /* StateTVC.m */,
+				BFF5AB52191854ED0019C483 /* HistoryVC.h */,
+				BFF5AB53191854ED0019C483 /* HistoryVC.m */,
 				BF66A5EE1905DCA100F05C43 /* State.m */,
 				BF66A5ED1905DCA100F05C43 /* State.h */,
 			);
@@ -356,6 +366,7 @@
 			files = (
 				BF1813F2190112FF00B1654C /* StateModel.xcdatamodeld in Sources */,
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
+				BFF5AB51191853000019C483 /* GITVC.m in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
 				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
@@ -364,6 +375,7 @@
 				BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
 				BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */,
+				BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

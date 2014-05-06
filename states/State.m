@@ -17,5 +17,8 @@
 @dynamic temperature;
 @dynamic currentcity;
 @dynamic laws;
+@dynamic history;
+@dynamic since;
+@dynamic governor;
 
 @end

@@ -18,5 +18,8 @@
 @property (nonatomic, retain) NSNumber * temperature;
 @property (nonatomic, retain) NSString * currentcity;
 @property (nonatomic, retain) NSString * laws;
+@property (nonatomic, retain) NSString * history;
+@property (nonatomic, retain) NSNumber * since;
+@property (nonatomic, retain) NSString * governor;
 
 @end
