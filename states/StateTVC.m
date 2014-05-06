@@ -26,6 +26,9 @@
 =======
 
 - (void)updateStateInfo
+<<<<<<< HEAD
+>>>>>>> FETCH_HEAD
+=======
 >>>>>>> FETCH_HEAD
 {
     self.stateNameLabel.text = self.state.name;
@@ -33,6 +36,10 @@
     self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 =======
 
 >>>>>>> FETCH_HEAD
@@ -42,6 +49,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self updateStateInfo];
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -58,12 +66,16 @@
 =======
 }
 >>>>>>> FETCH_HEAD
+=======
+}
+>>>>>>> FETCH_HEAD
 
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 -(UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath :(NSIndexPath *)indexPath {
     
@@ -72,6 +84,8 @@
     
 }
 
+=======
+>>>>>>> FETCH_HEAD
 =======
 >>>>>>> FETCH_HEAD
 
