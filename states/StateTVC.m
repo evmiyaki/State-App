@@ -21,18 +21,28 @@
 
 @implementation StateTVC
 
+<<<<<<< HEAD
 -(void)updateStateInfo
+=======
+
+- (void)updateStateInfo
+>>>>>>> FETCH_HEAD
 {
     self.stateNameLabel.text = self.state.name;
     self.stateNicknameLabel.text = self.state.statenickname;
     self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self updateStateInfo];
+<<<<<<< HEAD
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
@@ -45,12 +55,16 @@
         vc.state = self.state;
 }
 }
+=======
+}
+>>>>>>> FETCH_HEAD
 
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
 }
 
+<<<<<<< HEAD
 -(UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath :(NSIndexPath *)indexPath {
     
     return UITableViewCellAccessoryNone;
@@ -58,5 +72,7 @@
     
 }
 
+=======
+>>>>>>> FETCH_HEAD
 
 @end
