@@ -21,5 +21,7 @@
 @dynamic since;
 @dynamic governor;
 @dynamic sports;
+@dynamic crime;
+@dynamic themepark;
 
 @end

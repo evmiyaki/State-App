@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *sinceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *govLabel;
+@property (weak, nonatomic) IBOutlet UILabel *crimeLabel;
 
 @end
 
@@ -37,6 +38,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     self.sinceLabel.text = [NSString stringWithFormat:@"%i", [self.state.since intValue]];
     self.govLabel.text = self.state.governor;
+    self.crimeLabel.text = self.state.crime;
 
 
 }

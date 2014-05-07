@@ -194,7 +194,7 @@
                                             <bool key="isElement" value="YES"/>
                                         </accessibility>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EDy-OC-QlR" style="IBUITableViewCellStyleDefault" id="19O-aq-baO">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EDy-OC-QlR" detailTextLabel="2dZ-sT-hF0" style="IBUITableViewCellStyleSubtitle" id="19O-aq-baO">
                                         <rect key="frame" x="0.0" y="328" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="19O-aq-baO" id="bqL-ph-gac">
@@ -202,9 +202,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="High crime areas:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EDy-OC-QlR">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                    <rect key="frame" x="15" y="3" width="141" height="22"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2dZ-sT-hF0">
+                                                    <rect key="frame" x="15" y="25" width="43" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -315,6 +322,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="General Info" id="8oD-0E-zN7"/>
                     <connections>
+                        <outlet property="crimeLabel" destination="2dZ-sT-hF0" id="kZc-NZ-5iP"/>
                         <outlet property="govLabel" destination="tlD-65-Jtu" id="65F-J6-oQJ"/>
                         <outlet property="sinceLabel" destination="DaM-x0-Qwr" id="vy3-en-3LR"/>
                     </connections>
@@ -323,10 +331,10 @@
             </objects>
             <point key="canvasLocation" x="1860" y="-718"/>
         </scene>
-        <!--NavigationTVC - Activities-->
+        <!--ActTVC - Activities-->
         <scene sceneID="5MG-g2-Ppu">
             <objects>
-                <tableViewController id="3r4-hZ-2oV" customClass="NavigationTVC" sceneMemberID="viewController">
+                <tableViewController id="3r4-hZ-2oV" customClass="ActTVC" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4TP-Fe-qZk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,6 +419,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Activities" id="Q4e-9w-VRo"/>
+                    <connections>
+                        <outlet property="themeparkLabel" destination="fXI-Es-zqq" id="vTg-5C-ghW"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ww-rI-SJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -662,7 +673,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="3r4-hZ-2oV" kind="push" id="zfT-F9-hr1"/>
+                                                        <segue destination="3r4-hZ-2oV" kind="push" identifier="gotoactivities" id="zfT-F9-hr1"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-VO-mDq">
@@ -672,7 +683,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="m3E-4F-P8i" kind="push" id="41X-Hd-XJQ"/>
+                                                        <segue destination="m3E-4F-P8i" kind="push" identifier="gotoentertainment" id="41X-Hd-XJQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -778,7 +789,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="m50-hd-8bF" kind="push" id="Wfr-3C-Ymo"/>
+                                                        <segue destination="m50-hd-8bF" kind="push" identifier="gotogeneralinfo" id="Wfr-3C-Ymo"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -808,7 +819,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="xIs-EH-0Wy" kind="push" id="HTW-12-gi5"/>
+                                                        <segue destination="xIs-EH-0Wy" kind="push" identifier="gotospecialties" id="HTW-12-gi5"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

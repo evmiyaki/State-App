@@ -40,6 +40,7 @@
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
 		BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */; };
 		BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF363521919A54D00E555C2 /* CoreLocation.framework */; };
+		BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF36355191A0C9E00E555C2 /* ActTVC.m */; };
 		BFF5AB51191853000019C483 /* GITVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB50191853000019C483 /* GITVC.m */; };
 		BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB53191854ED0019C483 /* HistoryVC.m */; };
 /* End PBXBuildFile section */
@@ -100,6 +101,8 @@
 		BF898AE91909CEA50088A531 /* StateListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListTVC.m; sourceTree = "<group>"; };
 		BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
 		BFF363521919A54D00E555C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFF36354191A0C9E00E555C2 /* ActTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActTVC.h; sourceTree = "<group>"; };
+		BFF36355191A0C9E00E555C2 /* ActTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActTVC.m; sourceTree = "<group>"; };
 		BFF5AB4F191853000019C483 /* GITVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITVC.h; sourceTree = "<group>"; };
 		BFF5AB50191853000019C483 /* GITVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITVC.m; sourceTree = "<group>"; };
 		BFF5AB52191854ED0019C483 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
@@ -151,6 +154,8 @@
 		BF66A5F01905DD9500F05C43 /* AutoGen */ = {
 			isa = PBXGroup;
 			children = (
+				BFF36354191A0C9E00E555C2 /* ActTVC.h */,
+				BFF36355191A0C9E00E555C2 /* ActTVC.m */,
 				BF0D435A19194EBE00C29101 /* EntTVC.h */,
 				BF0D435B19194EBE00C29101 /* EntTVC.m */,
 				BFF5AB4F191853000019C483 /* GITVC.h */,
@@ -375,6 +380,7 @@
 			files = (
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
 				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,
+				BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */,
 				BFF5AB51191853000019C483 /* GITVC.m in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,

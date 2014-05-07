@@ -11,6 +11,7 @@
 #import "HistoryVC.h"
 #import "GITVC.h"
 #import "EntTVC.h"
+#import "ActTVC.h"
 
 @interface StateTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *stateNameLabel;
@@ -50,10 +51,12 @@
     } else if ([segue.identifier isEqualToString:@"gotoentertainment"]) {
         EntTVC *vc = (EntTVC *)segue.destinationViewController;
         vc.state = self.state;
-    }
+    } else if ([segue.identifier isEqualToString:@"gotoactivities"]) {
+        ActTVC *vc = (ActTVC *)segue.destinationViewController;
+        vc.state = self.state;
     
 }
-
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
