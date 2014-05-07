@@ -34,17 +34,27 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-#pragma mark - Table view data source
 
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = NO;
 }
+//- (void)locationManager: (CLLocationManager *)managerdidChangeAuthorizationStatus: (CLAuthorizationStatus)status
+//{
+//    if (status == kCLAuthorizationStatusDenied)
+//    {
+//        [self.locationManager stopUpdatingLocation];
+//        
+//        NSString *errorMessage =
+//        @"Location Services Permission Denied for this app.";
+//        NSDictionary *errorInfo =
+//        @{NSLocalizedDescriptionKey : errorMessage};
+//        
+//        NSError *deniedError =
+//        [NSError errorWithDomain:@"ICFLocationErrorDomain" code:1 userInfo:errorInfo];
+//        
+//    }
+//}
 
 @end

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF1813F2190112FF00B1654C /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */; };
+		BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0D435B19194EBE00C29101 /* EntTVC.m */; };
 		BF3475FE1908828300A45F6F /* 1397630822_dopewars-weed.png in Resources */ = {isa = PBXBuildFile; fileRef = BF3475F31908828300A45F6F /* 1397630822_dopewars-weed.png */; };
 		BF34760A1908845100A45F6F /* Casino.png in Resources */ = {isa = PBXBuildFile; fileRef = BF3476091908845100A45F6F /* Casino.png */; };
 		BF34760E190889B500A45F6F /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = BF34760D190889B500A45F6F /* mask.png */; };
@@ -38,6 +38,8 @@
 		BF841C5F18EE2475009F207F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C5E18EE2475009F207F /* MapKit.framework */; };
 		BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE61909CAAD0088A531 /* NavigationTVC.m */; };
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
+		BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */; };
+		BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF363521919A54D00E555C2 /* CoreLocation.framework */; };
 		BFF5AB51191853000019C483 /* GITVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB50191853000019C483 /* GITVC.m */; };
 		BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB53191854ED0019C483 /* HistoryVC.m */; };
 /* End PBXBuildFile section */
@@ -53,7 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
+		BF0D435A19194EBE00C29101 /* EntTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntTVC.h; sourceTree = "<group>"; };
+		BF0D435B19194EBE00C29101 /* EntTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntTVC.m; sourceTree = "<group>"; };
 		BF3475F31908828300A45F6F /* 1397630822_dopewars-weed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1397630822_dopewars-weed.png"; sourceTree = "<group>"; };
 		BF3476091908845100A45F6F /* Casino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Casino.png; sourceTree = "<group>"; };
 		BF34760D190889B500A45F6F /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 		BF898AE61909CAAD0088A531 /* NavigationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTVC.m; sourceTree = "<group>"; };
 		BF898AE81909CEA50088A531 /* StateListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateListTVC.h; sourceTree = "<group>"; };
 		BF898AE91909CEA50088A531 /* StateListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListTVC.m; sourceTree = "<group>"; };
+		BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
+		BFF363521919A54D00E555C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFF5AB4F191853000019C483 /* GITVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GITVC.h; sourceTree = "<group>"; };
 		BFF5AB50191853000019C483 /* GITVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITVC.m; sourceTree = "<group>"; };
 		BFF5AB52191854ED0019C483 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
@@ -106,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */,
 				BF841C5F18EE2475009F207F /* MapKit.framework in Frameworks */,
 				BF841C2C18EE1DE6009F207F /* CoreGraphics.framework in Frameworks */,
 				BF841C2E18EE1DE6009F207F /* UIKit.framework in Frameworks */,
@@ -145,16 +151,18 @@
 		BF66A5F01905DD9500F05C43 /* AutoGen */ = {
 			isa = PBXGroup;
 			children = (
+				BF0D435A19194EBE00C29101 /* EntTVC.h */,
+				BF0D435B19194EBE00C29101 /* EntTVC.m */,
 				BFF5AB4F191853000019C483 /* GITVC.h */,
 				BFF5AB50191853000019C483 /* GITVC.m */,
 				BF898AE81909CEA50088A531 /* StateListTVC.h */,
 				BF898AE91909CEA50088A531 /* StateListTVC.m */,
+				BF898AE61909CAAD0088A531 /* NavigationTVC.m */,
 				BF898AE51909CAAD0088A531 /* NavigationTVC.h */,
 				BF70A4D518F36BC500440FC1 /* MapViewController.h */,
 				BF70A4D618F36BC500440FC1 /* MapViewController.m */,
 				BF841C3E18EE1DE6009F207F /* ViewController.h */,
 				BF841C3F18EE1DE6009F207F /* ViewController.m */,
-				BF898AE61909CAAD0088A531 /* NavigationTVC.m */,
 				BF62336C1907302E00172C79 /* StateTVC.h */,
 				BF62336D1907302E00172C79 /* StateTVC.m */,
 				BFF5AB52191854ED0019C483 /* HistoryVC.h */,
@@ -197,6 +205,7 @@
 		BF841C2818EE1DE6009F207F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFF363521919A54D00E555C2 /* CoreLocation.framework */,
 				BF841C5E18EE2475009F207F /* MapKit.framework */,
 				BF841C2918EE1DE6009F207F /* Foundation.framework */,
 				BF841C2B18EE1DE6009F207F /* CoreGraphics.framework */,
@@ -213,7 +222,7 @@
 				BF841C3818EE1DE6009F207F /* AppDelegate.h */,
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
-				BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */,
+				BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */,
 				BF66A5F01905DD9500F05C43 /* AutoGen */,
 				BF66A5F41905DDD500F05C43 /* Custom */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -364,11 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1813F2190112FF00B1654C /* StateModel.xcdatamodeld in Sources */,
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
+				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,
 				BFF5AB51191853000019C483 /* GITVC.m in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
+				BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */,
 				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
 				BF66A5EF1905DCA100F05C43 /* State.m in Sources */,
 				BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */,
@@ -602,12 +612,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BF1813F0190112FF00B1654C /* StateModel.xcdatamodeld */ = {
+		BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */,
+				BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */,
 			);
-			currentVersion = BF1813F1190112FF00B1654C /* StateModel.xcdatamodel */;
+			currentVersion = BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */;
 			path = StateModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

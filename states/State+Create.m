@@ -10,7 +10,7 @@
 
 @implementation State (Create)
 
-+ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor sports:(NSString *)sports managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 {
     State *state = nil;
     if ([name length]) {
@@ -54,7 +54,7 @@
     
     if (!matches || ([matches count] < 1)) {
         // handle error
-        NSAssert(NO, @"wrong number of school day matches returned.");
+        NSAssert(NO, @"wrong number of state matches returned.");
         
     } else {
         NSLog(@"states loaded: %lu", (unsigned long)[matches count]);

@@ -10,6 +10,7 @@
 #import "State+Create.h"
 #import "HistoryVC.h"
 #import "GITVC.h"
+#import "EntTVC.h"
 
 @interface StateTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *stateNameLabel;
@@ -21,37 +22,22 @@
 
 @implementation StateTVC
 
-<<<<<<< HEAD
--(void)updateStateInfo
-=======
 
 - (void)updateStateInfo
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
 {
     self.stateNameLabel.text = self.state.name;
     self.stateNicknameLabel.text = self.state.statenickname;
     self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> FETCH_HEAD
-=======
-
->>>>>>> FETCH_HEAD
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
     [self updateStateInfo];
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"gotohistory"]) {
@@ -61,22 +47,19 @@
     } else if ([segue.identifier isEqualToString:@"gotogeneralinfo"]) {
         GITVC *vc = (GITVC *)segue.destinationViewController;
         vc.state = self.state;
+    } else if ([segue.identifier isEqualToString:@"gotoentertainment"]) {
+        EntTVC *vc = (EntTVC *)segue.destinationViewController;
+        vc.state = self.state;
+    }
+    
 }
-}
-=======
-}
->>>>>>> FETCH_HEAD
-=======
-}
->>>>>>> FETCH_HEAD
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 -(UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath :(NSIndexPath *)indexPath {
     
     return UITableViewCellAccessoryNone;
@@ -84,9 +67,6 @@
     
 }
 
-=======
->>>>>>> FETCH_HEAD
-=======
->>>>>>> FETCH_HEAD
+
 
 @end

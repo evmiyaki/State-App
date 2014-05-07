@@ -20,5 +20,6 @@
 @dynamic history;
 @dynamic since;
 @dynamic governor;
+@dynamic sports;
 
 @end

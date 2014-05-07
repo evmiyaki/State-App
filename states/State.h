@@ -21,5 +21,6 @@
 @property (nonatomic, retain) NSString * history;
 @property (nonatomic, retain) NSNumber * since;
 @property (nonatomic, retain) NSString * governor;
+@property (nonatomic, retain) NSString * sports;
 
 @end

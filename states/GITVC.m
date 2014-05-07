@@ -9,7 +9,9 @@
 #import "GITVC.h"
 
 @interface GITVC ()
-@property (weak, nonatomic) IBOutlet UITableViewCell *sinceTableView;
+
+@property (weak, nonatomic) IBOutlet UILabel *sinceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *govLabel;
 
 @end
 
@@ -33,8 +35,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.sinceTableView.text = [NSString stringWithFormat:@"%i", [self.state.since intValue]];
-    self.CHANGE.text = self.state.governor;
+    self.sinceLabel.text = [NSString stringWithFormat:@"%i", [self.state.since intValue]];
+    self.govLabel.text = self.state.governor;
 
 
 }

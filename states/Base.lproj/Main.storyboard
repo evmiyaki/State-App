@@ -315,7 +315,8 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="General Info" id="8oD-0E-zN7"/>
                     <connections>
-                        <outlet property="sinceTableView" destination="36v-HH-ytm" id="EtQ-7x-W3J"/>
+                        <outlet property="govLabel" destination="tlD-65-Jtu" id="65F-J6-oQJ"/>
+                        <outlet property="sinceLabel" destination="DaM-x0-Qwr" id="vy3-en-3LR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8U-bB-HGK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -415,11 +416,11 @@
             </objects>
             <point key="canvasLocation" x="1860" y="-2204"/>
         </scene>
-        <!--NavigationTVC - Entertainment-->
+        <!--EntTVC - Entertainment-->
         <scene sceneID="hPQ-Gj-n12">
             <objects>
-                <tableViewController id="m3E-4F-P8i" customClass="NavigationTVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sMt-6B-gOQ" customClass="Na">
+                <tableViewController id="m3E-4F-P8i" customClass="EntTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sMt-6B-gOQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -486,6 +487,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Entertainment" id="PWN-Eu-FhV"/>
+                    <connections>
+                        <outlet property="sportsLabel" destination="faj-Vv-VRu" id="4PA-tZ-KhE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GY-dO-7aT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
