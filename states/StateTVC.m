@@ -14,7 +14,6 @@
 #import "ActTVC.h"
 
 @interface StateTVC ()
-@property (weak, nonatomic) IBOutlet UILabel *stateNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateNicknameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *statePopulationLabel;
 @property(nonatomic) UITableViewCellAccessoryType accessoryType;
@@ -40,7 +39,6 @@
 - (void)updatePlacemarkInfo
 {
     NSString *stateAbbrev = [self.placemark.addressDictionary[@"State"] description];
-    self.stateLabel.text = stateAbbrev;
     self.currentcityLabel.text = [self.placemark.addressDictionary[@"City"] description];
     
     if (self.context) {
@@ -70,7 +68,7 @@
 
 - (void)updateStateInfo
 {
-    self.stateNameLabel.text = self.state.name;
+    self.stateLabel.text = self.state.name;
     self.stateNicknameLabel.text = self.state.statenickname;
     self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
 }
