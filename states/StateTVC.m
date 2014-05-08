@@ -145,11 +145,11 @@
 }
 }
 
-
 - (void)viewWillAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
     self.tableView.scrollEnabled = NO;
+  
 }
 
 -(UITableViewCellAccessoryType)tableView:(UITableView *)tv accessoryTypeForRowWithIndexPath :(NSIndexPath *)indexPath {
@@ -158,6 +158,7 @@
     self.accessoryType = UITableViewCellAccessoryNone;
     
 }
+
 
 
 
