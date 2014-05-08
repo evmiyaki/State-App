@@ -18,7 +18,6 @@
 		BF34761A19088B4A00A45F6F /* ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = BF34761919088B4A00A45F6F /* ticket.png */; };
 		BF34761C19088B5500A45F6F /* walkingman.png in Resources */ = {isa = PBXBuildFile; fileRef = BF34761B19088B5500A45F6F /* walkingman.png */; };
 		BF62336E1907302E00172C79 /* StateTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62336D1907302E00172C79 /* StateTVC.m */; };
-		BF66A5EF1905DCA100F05C43 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66A5EE1905DCA100F05C43 /* State.m */; };
 		BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66A5F21905DDBF00F05C43 /* State+Create.m */; };
 		BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF70A4D618F36BC500440FC1 /* MapViewController.m */; };
 		BF841C2A18EE1DE6009F207F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C2918EE1DE6009F207F /* Foundation.framework */; };
@@ -38,6 +37,7 @@
 		BF841C5F18EE2475009F207F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C5E18EE2475009F207F /* MapKit.framework */; };
 		BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE61909CAAD0088A531 /* NavigationTVC.m */; };
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
+		BFF175F7191AF39C00F0031D /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF175F6191AF39C00F0031D /* State.m */; };
 		BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */; };
 		BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF363521919A54D00E555C2 /* CoreLocation.framework */; };
 		BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF36355191A0C9E00E555C2 /* ActTVC.m */; };
@@ -69,8 +69,6 @@
 		BF34761B19088B5500A45F6F /* walkingman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = walkingman.png; sourceTree = "<group>"; };
 		BF62336C1907302E00172C79 /* StateTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTVC.h; sourceTree = "<group>"; };
 		BF62336D1907302E00172C79 /* StateTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTVC.m; sourceTree = "<group>"; };
-		BF66A5ED1905DCA100F05C43 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		BF66A5EE1905DCA100F05C43 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		BF66A5F11905DDBF00F05C43 /* State+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "State+Create.h"; sourceTree = "<group>"; };
 		BF66A5F21905DDBF00F05C43 /* State+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "State+Create.m"; sourceTree = "<group>"; };
 		BF70A4D518F36BC500440FC1 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
@@ -99,6 +97,8 @@
 		BF898AE61909CAAD0088A531 /* NavigationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTVC.m; sourceTree = "<group>"; };
 		BF898AE81909CEA50088A531 /* StateListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateListTVC.h; sourceTree = "<group>"; };
 		BF898AE91909CEA50088A531 /* StateListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListTVC.m; sourceTree = "<group>"; };
+		BFF175F5191AF39C00F0031D /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BFF175F6191AF39C00F0031D /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
 		BFF363521919A54D00E555C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFF36354191A0C9E00E555C2 /* ActTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActTVC.h; sourceTree = "<group>"; };
@@ -172,8 +172,6 @@
 				BF62336D1907302E00172C79 /* StateTVC.m */,
 				BFF5AB52191854ED0019C483 /* HistoryVC.h */,
 				BFF5AB53191854ED0019C483 /* HistoryVC.m */,
-				BF66A5EE1905DCA100F05C43 /* State.m */,
-				BF66A5ED1905DCA100F05C43 /* State.h */,
 			);
 			name = AutoGen;
 			sourceTree = "<group>";
@@ -228,6 +226,8 @@
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
 				BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */,
+				BFF175F5191AF39C00F0031D /* State.h */,
+				BFF175F6191AF39C00F0031D /* State.m */,
 				BF66A5F01905DD9500F05C43 /* AutoGen */,
 				BF66A5F41905DDD500F05C43 /* Custom */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -386,10 +386,10 @@
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
 				BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */,
 				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
-				BF66A5EF1905DCA100F05C43 /* State.m in Sources */,
 				BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */,
 				BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
+				BFF175F7191AF39C00F0031D /* State.m in Sources */,
 				BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */,
 				BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */,
 			);

@@ -2,7 +2,7 @@
 //  State.m
 //  states
 //
-//  Created by Evan Miyaki on 4/21/14.
+//  Created by Evan Miyaki on 5/7/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -11,17 +11,15 @@
 
 @implementation State
 
-@dynamic name;
-@dynamic statenickname;
-@dynamic population;
-@dynamic temperature;
-@dynamic currentcity;
-@dynamic laws;
-@dynamic history;
-@dynamic since;
-@dynamic governor;
-@dynamic sports;
 @dynamic crime;
+@dynamic governor;
+@dynamic history;
+@dynamic name;
+@dynamic population;
+@dynamic since;
+@dynamic sports;
+@dynamic statenickname;
 @dynamic themepark;
+@dynamic abbreviation;
 
 @end

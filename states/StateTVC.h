@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "State.h"
+@import CoreLocation;
 
-@interface StateTVC : UITableViewController
+@interface StateTVC : UITableViewController <CLLocationManagerDelegate>
 @property(nonatomic, strong) State *state;
+
 
 @end
