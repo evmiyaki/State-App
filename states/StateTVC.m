@@ -22,7 +22,8 @@
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (weak, nonatomic) IBOutlet UILabel *currentcityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateLabel;
-@property (nonatomic, strong) NSString *currentStateAbbreviation;
+
+@property (nonatomic, strong) CLPlacemark *placemark;
 
 @end
 
@@ -35,11 +36,36 @@
     }
     return _geocoder;
 }
-- (void)setCurrentStateAbbreviation:(NSString *)currentStateAbbreviation
+
+- (void)updatePlacemarkInfo
 {
-    _currentStateAbbreviation = currentStateAbbreviation;
-    [self displayStateInfo];
-    self.stateLabel.text = currentStateAbbreviation;
+    NSString *stateAbbrev = [self.placemark.addressDictionary[@"State"] description];
+    self.stateLabel.text = stateAbbrev;
+    self.currentcityLabel.text = [self.placemark.addressDictionary[@"City"] description];
+    
+    if (self.context) {
+        State *state = [State stateForAbbreviation:stateAbbrev
+                              managedObjectContext:self.context];
+        self.state = state;
+    }
+}
+
+- (void)setPlacemark:(CLPlacemark *)placemark
+{
+    _placemark = placemark;
+    [self updatePlacemarkInfo];
+}
+
+- (void)setContext:(NSManagedObjectContext *)context
+{
+    _context = context;
+    if (self.placemark) [self updatePlacemarkInfo];
+}
+
+- (void)setState:(State *)state
+{
+    _state = state;
+    [self updateStateInfo];
 }
 
 - (void)updateStateInfo
@@ -86,24 +112,12 @@
     NSLog(@"Location manage did fail: %@", [error localizedDescription]);
 }
 
-- (void)displayStateInfo
-{
-    State *state = [State stateForAbbreviation:self.currentStateAbbreviation];
-    [self updateStateInfo];
-}
-
-- (void)updateLocationLabelsWithPlacemark:(CLPlacemark *)placemark
-{
-    self.currentcityLabel.text = [placemark.addressDictionary[@"City"] description];
-    self.currentStateAbbreviation = [placemark.addressDictionary[@"State"] description];
-}
-
 - (void)grabCityFromLocation:(CLLocation *)location
 {
     [self.geocoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
         if (error == nil && placemarks.count > 0) {
             CLPlacemark *placemark = placemarks[0];
-            [self updateLocationLabelsWithPlacemark:placemark];
+            self.placemark = placemark;
             
         } else if (error == nil && placemarks.count == 0) {
             NSLog(@"No results were returned.");
