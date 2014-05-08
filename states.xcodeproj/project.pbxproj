@@ -43,6 +43,7 @@
 		BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF36355191A0C9E00E555C2 /* ActTVC.m */; };
 		BFF5AB51191853000019C483 /* GITVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB50191853000019C483 /* GITVC.m */; };
 		BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB53191854ED0019C483 /* HistoryVC.m */; };
+		CF5A3263191B30720078AD31 /* StateDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5A3262191B30720078AD31 /* StateDataLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		BFF5AB50191853000019C483 /* GITVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GITVC.m; sourceTree = "<group>"; };
 		BFF5AB52191854ED0019C483 /* HistoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryVC.h; sourceTree = "<group>"; };
 		BFF5AB53191854ED0019C483 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
+		CF5A3261191B30720078AD31 /* StateDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDataLoader.h; sourceTree = "<group>"; };
+		CF5A3262191B30720078AD31 /* StateDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateDataLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +227,8 @@
 				BFFBFDF018F1187D00803956 /* iPad */,
 				BF841C3818EE1DE6009F207F /* AppDelegate.h */,
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
+				CF5A3261191B30720078AD31 /* StateDataLoader.h */,
+				CF5A3262191B30720078AD31 /* StateDataLoader.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
 				BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */,
 				BFF175F5191AF39C00F0031D /* State.h */,
@@ -387,6 +392,7 @@
 				BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */,
 				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
 				BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */,
+				CF5A3263191B30720078AD31 /* StateDataLoader.m in Sources */,
 				BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
 				BFF175F7191AF39C00F0031D /* State.m in Sources */,
