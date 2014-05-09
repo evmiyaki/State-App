@@ -74,16 +74,17 @@
     State *state = nil;
     
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"State"];
-    request.predicate = [NSPredicate predicateWithFormat:@"abbreviation = %@"];
+    request.predicate = [NSPredicate predicateWithFormat:@"abbreviation = %@", abbreviation];
     NSError *error;
     NSArray *matches = [context executeFetchRequest:request error:&error];
     
     if (!matches || ([matches count] < 1)) {
         // handle error
-        NSAssert(NO, @"wrong number of state matches returned.");
-        
+        NSLog(@"State abbreviation not found: %@", abbreviation);
+    } else if ([matches count] > 1) {
+        NSAssert(NO, @"Too namy matches for abbrev: %@", abbreviation);
     } else {
-        NSLog(@"states loaded: %lu", (unsigned long)[matches count]);
+        NSLog(@"State found for abbreviation: %@", abbreviation);
         state = [matches lastObject];
     }
     
