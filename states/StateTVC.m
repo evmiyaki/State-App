@@ -145,7 +145,7 @@
 }
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)changingNavigationControllerAndTableView:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
     self.tableView.scrollEnabled = NO;

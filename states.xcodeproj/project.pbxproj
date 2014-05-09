@@ -37,7 +37,10 @@
 		BF841C5F18EE2475009F207F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF841C5E18EE2475009F207F /* MapKit.framework */; };
 		BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE61909CAAD0088A531 /* NavigationTVC.m */; };
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
-		BFF175F7191AF39C00F0031D /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF175F6191AF39C00F0031D /* State.m */; };
+		BFE7DD02191C475400146F55 /* Law+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD01191C475400146F55 /* Law+Create.m */; };
+		BFE7DD05191C47BA00146F55 /* LawDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD04191C47BA00146F55 /* LawDataLoader.m */; };
+		BFE7DD0E191D50A500146F55 /* Law.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD0D191D50A500146F55 /* Law.m */; };
+		BFE7DD11191D50A500146F55 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD10191D50A500146F55 /* State.m */; };
 		BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */; };
 		BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF363521919A54D00E555C2 /* CoreLocation.framework */; };
 		BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF36355191A0C9E00E555C2 /* ActTVC.m */; };
@@ -98,8 +101,14 @@
 		BF898AE61909CAAD0088A531 /* NavigationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationTVC.m; sourceTree = "<group>"; };
 		BF898AE81909CEA50088A531 /* StateListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateListTVC.h; sourceTree = "<group>"; };
 		BF898AE91909CEA50088A531 /* StateListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListTVC.m; sourceTree = "<group>"; };
-		BFF175F5191AF39C00F0031D /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		BFF175F6191AF39C00F0031D /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BFE7DD00191C475400146F55 /* Law+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Law+Create.h"; path = "../Law+Create.h"; sourceTree = "<group>"; };
+		BFE7DD01191C475400146F55 /* Law+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Law+Create.m"; path = "../Law+Create.m"; sourceTree = "<group>"; };
+		BFE7DD03191C47BA00146F55 /* LawDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawDataLoader.h; sourceTree = "<group>"; };
+		BFE7DD04191C47BA00146F55 /* LawDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawDataLoader.m; sourceTree = "<group>"; };
+		BFE7DD0C191D50A500146F55 /* Law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Law.h; sourceTree = "<group>"; };
+		BFE7DD0D191D50A500146F55 /* Law.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Law.m; sourceTree = "<group>"; };
+		BFE7DD0F191D50A500146F55 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BFE7DD10191D50A500146F55 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
 		BFF363521919A54D00E555C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFF36354191A0C9E00E555C2 /* ActTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActTVC.h; sourceTree = "<group>"; };
@@ -184,6 +193,8 @@
 			children = (
 				BF66A5F21905DDBF00F05C43 /* State+Create.m */,
 				BF66A5F11905DDBF00F05C43 /* State+Create.h */,
+				BFE7DD00191C475400146F55 /* Law+Create.h */,
+				BFE7DD01191C475400146F55 /* Law+Create.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -229,10 +240,14 @@
 				BF841C3918EE1DE6009F207F /* AppDelegate.m */,
 				CF5A3261191B30720078AD31 /* StateDataLoader.h */,
 				CF5A3262191B30720078AD31 /* StateDataLoader.m */,
+				BFE7DD03191C47BA00146F55 /* LawDataLoader.h */,
+				BFE7DD04191C47BA00146F55 /* LawDataLoader.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
 				BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */,
-				BFF175F5191AF39C00F0031D /* State.h */,
-				BFF175F6191AF39C00F0031D /* State.m */,
+				BFE7DD0F191D50A500146F55 /* State.h */,
+				BFE7DD10191D50A500146F55 /* State.m */,
+				BFE7DD0C191D50A500146F55 /* Law.h */,
+				BFE7DD0D191D50A500146F55 /* Law.m */,
 				BF66A5F01905DD9500F05C43 /* AutoGen */,
 				BF66A5F41905DDD500F05C43 /* Custom */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -386,16 +401,19 @@
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
 				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,
 				BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */,
+				BFE7DD11191D50A500146F55 /* State.m in Sources */,
+				BFE7DD0E191D50A500146F55 /* Law.m in Sources */,
 				BFF5AB51191853000019C483 /* GITVC.m in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,
+				BFE7DD02191C475400146F55 /* Law+Create.m in Sources */,
 				BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */,
 				BF62336E1907302E00172C79 /* StateTVC.m in Sources */,
 				BF66A5F31905DDBF00F05C43 /* State+Create.m in Sources */,
 				CF5A3263191B30720078AD31 /* StateDataLoader.m in Sources */,
+				BFE7DD05191C47BA00146F55 /* LawDataLoader.m in Sources */,
 				BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */,
 				BF841C3618EE1DE6009F207F /* main.m in Sources */,
-				BFF175F7191AF39C00F0031D /* State.m in Sources */,
 				BF70A4D718F36BC500440FC1 /* MapViewController.m in Sources */,
 				BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */,
 			);
