@@ -7,9 +7,11 @@
 //
 
 #import "Law.h"
+#import "State.h"
 
 @interface Law (Create)
 
-+ (Law *)createLawForStateAbbreviation:(NSString *)stateAbbreviation type:(NSString *)type displayText:(NSString *)displayText managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (Law *)createLawForStateAbbreviation:(State *)state displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
 
 @end

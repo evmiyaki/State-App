@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Law+Create.h"
+
 
 @interface LawDataLoader : NSObject
+
++ (void)loadLawDataWithManagedObjectContext:(NSManagedObjectContext *)context;
+
 
 @end
