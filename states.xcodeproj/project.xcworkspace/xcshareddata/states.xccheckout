@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2C8A9658-FBC6-47EA-AEF8-D2657363D4F6</string>
+	<string>E78FD382-86AA-44DF-97F2-26C6FD6D579A</string>
 	<key>IDESourceControlProjectName</key>
 	<string>states</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>1CD7DED4-CCF8-4FE9-813C-E445B29B7F31</key>
-		<string>https://github.com/AgencyAgency/State-App.git</string>
+		<key>91BF15B4-9420-4219-BC9D-4F79B3AB4227</key>
+		<string>https://github.com/evmiyaki/State-App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>states.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>1CD7DED4-CCF8-4FE9-813C-E445B29B7F31</key>
+		<key>91BF15B4-9420-4219-BC9D-4F79B3AB4227</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AgencyAgency/State-App.git</string>
+	<string>https://github.com/evmiyaki/State-App.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>1CD7DED4-CCF8-4FE9-813C-E445B29B7F31</string>
+	<string>91BF15B4-9420-4219-BC9D-4F79B3AB4227</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>1CD7DED4-CCF8-4FE9-813C-E445B29B7F31</string>
+			<string>91BF15B4-9420-4219-BC9D-4F79B3AB4227</string>
 			<key>IDESourceControlWCCName</key>
-			<string>State-App</string>
+			<string>states</string>
 		</dict>
 	</array>
 </dict>

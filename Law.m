@@ -14,7 +14,6 @@
 
 @dynamic displayText;
 @dynamic type;
-@dynamic stateAbbreviation;
 @dynamic state;
 
 @end

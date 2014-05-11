@@ -23,7 +23,7 @@
 @property (nonatomic, retain) NSString * sports;
 @property (nonatomic, retain) NSString * statenickname;
 @property (nonatomic, retain) NSString * themepark;
-@property (nonatomic, retain) NSSet *laws;
+@property (nonatomic, retain) NSSet * laws;
 @end
 
 @interface State (CoreDataGeneratedAccessors)

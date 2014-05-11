@@ -15,7 +15,6 @@
 
 @property (nonatomic, retain) NSString * displayText;
 @property (nonatomic, retain) NSString * type;
-@property (nonatomic, retain) NSString * stateAbbreviation;
 @property (nonatomic, retain) State *state;
 
 @end

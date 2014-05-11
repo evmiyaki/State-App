@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "StateDataLoader.h"
 #import "StateTVC.h"
+#import "LawDataLoader.h"
 
 @implementation AppDelegate
 
@@ -26,6 +27,7 @@
     if (self.document.documentState == UIDocumentStateNormal) {
         self.managedObjectContext = self.document.managedObjectContext;
         [StateDataLoader loadStateDataWithManagedObjectContext:self.managedObjectContext];
+        [LawDataLoader loadLawDataWithManagedObjectContext:self.managedObjectContext];
         
         StateTVC *vc = [self initialVC];
         vc.context = self.managedObjectContext;

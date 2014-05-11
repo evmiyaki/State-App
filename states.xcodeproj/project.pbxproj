@@ -39,8 +39,8 @@
 		BF898AEA1909CEA50088A531 /* StateListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF898AE91909CEA50088A531 /* StateListTVC.m */; };
 		BFE7DD02191C475400146F55 /* Law+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD01191C475400146F55 /* Law+Create.m */; };
 		BFE7DD05191C47BA00146F55 /* LawDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD04191C47BA00146F55 /* LawDataLoader.m */; };
-		BFE7DD0E191D50A500146F55 /* Law.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD0D191D50A500146F55 /* Law.m */; };
-		BFE7DD11191D50A500146F55 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD10191D50A500146F55 /* State.m */; };
+		BFE7DD14191E026E00146F55 /* Law.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD13191E026E00146F55 /* Law.m */; };
+		BFE7DD17191E026F00146F55 /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE7DD16191E026F00146F55 /* State.m */; };
 		BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */; };
 		BFF363531919A54D00E555C2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF363521919A54D00E555C2 /* CoreLocation.framework */; };
 		BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF36355191A0C9E00E555C2 /* ActTVC.m */; };
@@ -105,10 +105,10 @@
 		BFE7DD01191C475400146F55 /* Law+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Law+Create.m"; path = "../Law+Create.m"; sourceTree = "<group>"; };
 		BFE7DD03191C47BA00146F55 /* LawDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawDataLoader.h; sourceTree = "<group>"; };
 		BFE7DD04191C47BA00146F55 /* LawDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawDataLoader.m; sourceTree = "<group>"; };
-		BFE7DD0C191D50A500146F55 /* Law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Law.h; sourceTree = "<group>"; };
-		BFE7DD0D191D50A500146F55 /* Law.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Law.m; sourceTree = "<group>"; };
-		BFE7DD0F191D50A500146F55 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
-		BFE7DD10191D50A500146F55 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BFE7DD12191E026E00146F55 /* Law.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Law.h; sourceTree = "<group>"; };
+		BFE7DD13191E026E00146F55 /* Law.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Law.m; sourceTree = "<group>"; };
+		BFE7DD15191E026F00146F55 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BFE7DD16191E026F00146F55 /* State.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
 		BFF363501919A1AC00E555C2 /* StateModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateModel.xcdatamodel; sourceTree = "<group>"; };
 		BFF363521919A54D00E555C2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BFF36354191A0C9E00E555C2 /* ActTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActTVC.h; sourceTree = "<group>"; };
@@ -202,6 +202,10 @@
 		BF841C1D18EE1DE6009F207F = {
 			isa = PBXGroup;
 			children = (
+				BFE7DD15191E026F00146F55 /* State.h */,
+				BFE7DD16191E026F00146F55 /* State.m */,
+				BFE7DD12191E026E00146F55 /* Law.h */,
+				BFE7DD13191E026E00146F55 /* Law.m */,
 				BF841C2F18EE1DE6009F207F /* states */,
 				BF841C4E18EE1DE6009F207F /* statesTests */,
 				BF841C2818EE1DE6009F207F /* Frameworks */,
@@ -244,10 +248,6 @@
 				BFE7DD04191C47BA00146F55 /* LawDataLoader.m */,
 				BF841C3B18EE1DE6009F207F /* Main.storyboard */,
 				BFF3634F1919A1AC00E555C2 /* StateModel.xcdatamodeld */,
-				BFE7DD0F191D50A500146F55 /* State.h */,
-				BFE7DD10191D50A500146F55 /* State.m */,
-				BFE7DD0C191D50A500146F55 /* Law.h */,
-				BFE7DD0D191D50A500146F55 /* Law.m */,
 				BF66A5F01905DD9500F05C43 /* AutoGen */,
 				BF66A5F41905DDD500F05C43 /* Custom */,
 				BF841C4118EE1DE6009F207F /* Images.xcassets */,
@@ -401,8 +401,8 @@
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
 				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,
 				BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */,
-				BFE7DD11191D50A500146F55 /* State.m in Sources */,
-				BFE7DD0E191D50A500146F55 /* Law.m in Sources */,
+				BFE7DD17191E026F00146F55 /* State.m in Sources */,
+				BFE7DD14191E026E00146F55 /* Law.m in Sources */,
 				BFF5AB51191853000019C483 /* GITVC.m in Sources */,
 				BF841C4018EE1DE6009F207F /* ViewController.m in Sources */,
 				BF841C3A18EE1DE6009F207F /* AppDelegate.m in Sources */,

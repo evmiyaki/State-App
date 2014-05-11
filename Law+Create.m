@@ -11,13 +11,11 @@
 
 @implementation Law (Create)
 
-+ (Law *)createLawForStateAbbreviation:(NSString *)stateAbbreviation type:(NSString *)type displayText:(NSString *)displayText managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (Law *)createLawForStateAbbreviation:(State *)state displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 {
-    State *state = [State stateForAbbreviation:stateAbbreviation managedObjectContext:managedObjectContext];
     
     Law *law = nil;
-    if ([stateAbbreviation length]) {
-        NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"State"];
+            NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"State"];
         request.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:@[[NSPredicate predicateWithFormat:@"type = %@", type],[NSPredicate predicateWithFormat:@"state = %@", state]]];
         NSError *error;
         NSArray *matches = [managedObjectContext executeFetchRequest:request error:&error];
@@ -27,19 +25,31 @@
             NSAssert(NO, @"wrong number of period matches returned.");
             
         } else if (![matches count]) {
-            NSLog(@"Creating new Law: %@", stateAbbreviation);
-            state = [NSEntityDescription insertNewObjectForEntityForName:@"Law"
-                                                  inManagedObjectContext:managedObjectContext];
-            law.stateAbbreviation = stateAbbreviation;
+
             law.displayText = displayText;
             law.type = type;
+            law.state = state;
             
             
         } else {
             law = [matches lastObject];
         }
-    }
-    return law;
+};
+
++ (Law *)associateTypeWithIcon:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+{
+    NSString* imageName = [[NSBundle mainBundle] pathForResource:@"image1" ofType:@"salesTax"];
+    NSImage* imageObj = [[NSImage alloc] initWithContentsOfFile:imageName];
+    NSString* imageName = [[NSBundle mainBundle] pathForResource:@"image1" ofType:@"phoneUse"];
+    NSImage* imageObj = [[NSImage alloc] initWithContentsOfFile:imageName];
+    NSString* imageName = [[NSBundle mainBundle] pathForResource:@"image1" ofType:@"seatbelts"];
+    NSImage* imageObj = [[NSImage alloc] initWithContentsOfFile:imageName];
+    NSString* imageName = [[NSBundle mainBundle] pathForResource:@"image1" ofType:@"marijuana"];
+    NSImage* imageObj = [[NSImage alloc] initWithContentsOfFile:imageName];
+    NSString* imageName = [[NSBundle mainBundle] pathForResource:@"image1" ofType:@"gambling"];
+    NSImage* imageObj = [[NSImage alloc] initWithContentsOfFile:imageName];
 }
+
+
 
 @end
