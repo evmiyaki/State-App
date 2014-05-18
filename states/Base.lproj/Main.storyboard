@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pXr-yf-Hyy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pXr-yf-Hyy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -325,35 +325,49 @@
                         <sections>
                             <tableViewSection id="r6Q-6k-IBb">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ZVv-1L-beD" style="IBUITableViewCellStyleDefault" id="SYu-4P-Udl">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="ZVv-1L-beD" detailTextLabel="o17-tL-W5J" style="IBUITableViewCellStyleValue1" id="SYu-4P-Udl">
                                         <rect key="frame" x="0.0" y="64" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SYu-4P-Udl" id="fu7-aJ-NFt">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Popular things to do" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZVv-1L-beD">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Tourist attractions:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZVv-1L-beD">
+                                                    <rect key="frame" x="15" y="12" width="131" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o17-tL-W5J">
+                                                    <rect key="frame" x="265" y="12" width="40" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="HeN-BX-bnY" style="IBUITableViewCellStyleDefault" id="wyk-Oh-hhv">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eSx-x0-pBU" detailTextLabel="9Ll-Vx-Vnq" style="IBUITableViewCellStyleValue1" id="k4d-MF-qH3">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wyk-Oh-hhv" id="HOv-jO-Nrx">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4d-MF-qH3" id="xZ6-a1-6zy">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="National Parks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HeN-BX-bnY">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="43"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Museums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eSx-x0-pBU">
+                                                    <rect key="frame" x="15" y="12" width="65" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Ll-Vx-Vnq">
+                                                    <rect key="frame" x="265" y="12" width="40" height="20"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
+                                                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -383,14 +397,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eSx-x0-pBU" style="IBUITableViewCellStyleDefault" id="k4d-MF-qH3">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="HeN-BX-bnY" style="IBUITableViewCellStyleDefault" id="wyk-Oh-hhv">
                                         <rect key="frame" x="0.0" y="247" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k4d-MF-qH3" id="xZ6-a1-6zy">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wyk-Oh-hhv" id="HOv-jO-Nrx">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Museums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eSx-x0-pBU">
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="National Parks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HeN-BX-bnY">
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -410,7 +424,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Activities" id="Q4e-9w-VRo"/>
                     <connections>
+                        <outlet property="museumLabel" destination="9Ll-Vx-Vnq" id="sEY-Ie-15h"/>
                         <outlet property="themeparkLabel" destination="yvz-rh-hiB" id="mDS-gW-mPh"/>
+                        <outlet property="touristAttractionLabel" destination="o17-tL-W5J" id="YMm-Xc-Vlc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ww-rI-SJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -428,22 +444,22 @@
                         <sections>
                             <tableViewSection id="6Bx-sj-NlS">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" textLabel="1tN-8C-Pnd" detailTextLabel="ZTR-Rr-UCa" rowHeight="395" style="IBUITableViewCellStyleValue1" id="7EJ-1w-n6a">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="395"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" textLabel="1tN-8C-Pnd" detailTextLabel="ZTR-Rr-UCa" rowHeight="420" style="IBUITableViewCellStyleValue1" id="7EJ-1w-n6a">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="420"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="top" tableViewCell="7EJ-1w-n6a" id="d87-Ss-sbu">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="394"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="419"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="100" text="Pro Sports" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1tN-8C-Pnd">
-                                                    <rect key="frame" x="15" y="187" width="75" height="20"/>
+                                                    <rect key="frame" x="15" y="200" width="75" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsLetterSpacingToFitWidth="YES" preferredMaxLayoutWidth="40" id="ZTR-Rr-UCa">
-                                                    <rect key="frame" x="265" y="187" width="40" height="20"/>
+                                                    <rect key="frame" x="265" y="200" width="40" height="20"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="17"/>
                                                     <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
@@ -453,7 +469,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="daS-5h-8Vu" detailTextLabel="c3S-UN-WJY" style="IBUITableViewCellStyleValue1" id="fdr-UR-3Xk">
-                                        <rect key="frame" x="0.0" y="459" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="484" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fdr-UR-3Xk" id="f5Z-T6-CD8">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -477,7 +493,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="u3i-cS-suk" detailTextLabel="FZD-zY-z3r" style="IBUITableViewCellStyleValue1" id="BdT-iY-6bp">
-                                        <rect key="frame" x="0.0" y="503" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="528" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BdT-iY-6bp" id="Xbt-k2-w0S">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -510,6 +526,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Entertainment" id="PWN-Eu-FhV"/>
                     <connections>
+                        <outlet property="shoppingCenterLabel" destination="c3S-UN-WJY" id="btr-kg-Hwr"/>
                         <outlet property="sportsLabel" destination="ZTR-Rr-UCa" id="Skk-pO-T6z"/>
                     </connections>
                 </tableViewController>
@@ -670,97 +687,39 @@
                         <sections>
                             <tableViewSection id="Knd-gQ-KCk">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="99" id="kSu-kl-Txw">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="99"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kSu-kl-Txw" id="Skc-Zc-6qI">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="98"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC6-xW-xbJ">
-                                                    <rect key="frame" x="20" y="43" width="127" height="93"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <state key="normal" title="Activities">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="3r4-hZ-2oV" kind="push" identifier="gotoactivities" id="zfT-F9-hr1"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-VO-mDq">
-                                                    <rect key="frame" x="173" y="74" width="109" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <state key="normal" title="Entertainment">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <segue destination="m3E-4F-P8i" kind="push" identifier="gotoentertainment" id="41X-Hd-XJQ"/>
-                                                    </connections>
-                                                </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="walkingman.png" translatesAutoresizingMaskIntoConstraints="NO" id="pSx-jk-SiF">
-                                                    <rect key="frame" x="51" y="0.0" width="63" height="71"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
-                                                        <bool key="isElement" value="YES"/>
-                                                    </accessibility>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="cfl-g2-PDd">
-                                                    <rect key="frame" x="193" y="5" width="68" height="66"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" none="YES" button="YES" image="YES"/>
-                                                        <bool key="isElement" value="YES"/>
-                                                    </accessibility>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="76" id="jq6-dO-fwW">
-                                        <rect key="frame" x="0.0" y="163" width="320" height="76"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" showsReorderControl="YES" accessoryType="disclosureIndicator" indentationWidth="10" shouldIndentWhileEditing="NO" rowHeight="146" id="jq6-dO-fwW">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="146"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jq6-dO-fwW" id="jUK-k7-VW7">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="145"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="STATE " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="nf4-z7-ueO">
-                                                    <rect key="frame" x="20" y="0.0" width="270" height="75"/>
+                                                    <rect key="frame" x="6" y="0.0" width="298" height="95"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="42"/>
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="100"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="37" id="htX-MK-aHR">
-                                        <rect key="frame" x="0.0" y="239" width="320" height="37"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htX-MK-aHR" id="73V-YY-H2T">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="nickname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD2-DX-wMJ">
-                                                    <rect key="frame" x="15" y="0.0" width="290" height="36"/>
+                                                    <rect key="frame" x="10" y="109" width="290" height="36"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="23"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="Orn-v6-Tth">
-                                        <rect key="frame" x="0.0" y="276" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="htX-MK-aHR">
+                                        <rect key="frame" x="0.0" y="210" width="320" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Orn-v6-Tth" id="LQ8-0J-KSw">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="htX-MK-aHR" id="73V-YY-H2T">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="29"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="currrent city" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="497-qH-FfM">
-                                                    <rect key="frame" x="17" y="0.0" width="270" height="43"/>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="497-qH-FfM">
+                                                    <rect key="frame" x="25" y="-7" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -769,15 +728,15 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="fwX-OL-TA7">
-                                        <rect key="frame" x="0.0" y="320" width="320" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="31" id="Orn-v6-Tth">
+                                        <rect key="frame" x="0.0" y="240" width="320" height="31"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fwX-OL-TA7" id="rbC-H2-HIF">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Orn-v6-Tth" id="LQ8-0J-KSw">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="30"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" fixedFrame="YES" text="Population" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNi-Op-BVq">
-                                                    <rect key="frame" x="17" y="0.0" width="270" height="43"/>
+                                                    <rect key="frame" x="86" y="0.0" width="270" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -786,73 +745,116 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="hfv-aC-zlU" rowHeight="85" style="IBUITableViewCellStyleDefault" id="5cC-Ho-IYU">
-                                        <rect key="frame" x="0.0" y="364" width="320" height="85"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="73" id="5cC-Ho-IYU">
+                                        <rect key="frame" x="0.0" y="271" width="320" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cC-Ho-IYU" id="ivC-ad-kEU">
-                                            <rect key="frame" x="0.0" y="0.0" width="287" height="84"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Laws here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hfv-aC-zlU">
-                                                    <rect key="frame" x="15" y="0.0" width="270" height="84"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucx-K0-m6a">
+                                                    <rect key="frame" x="261" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="gambling">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sej-9i-f0n">
+                                                    <rect key="frame" x="68" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="marijuana">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-Ch-eCQ">
+                                                    <rect key="frame" x="197" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="seatbelts">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RW-L5-9dd">
+                                                    <rect key="frame" x="5" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="salesTax">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-bf-2rG">
+                                                    <rect key="frame" x="139" y="11" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="phoneUse">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="115" id="jXU-mv-o2B">
-                                        <rect key="frame" x="0.0" y="449" width="320" height="115"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="225" id="jXU-mv-o2B">
+                                        <rect key="frame" x="0.0" y="344" width="320" height="225"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jXU-mv-o2B" id="T0r-Yi-rYM">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="224"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info.png" translatesAutoresizingMaskIntoConstraints="NO" id="M7y-lN-sUb">
-                                                    <rect key="frame" x="126" y="12" width="69" height="59"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-Cs-lZV">
+                                                    <rect key="frame" x="184" y="121" width="116" height="40"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scroll.png" translatesAutoresizingMaskIntoConstraints="NO" id="Flx-kw-QcJ">
-                                                    <rect key="frame" x="233" y="12" width="67" height="54"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8l1-Cs-lZV">
-                                                    <rect key="frame" x="224" y="80" width="85" height="24"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <state key="normal" title="History">
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                                    <state key="normal" title="History" image="scroll.png">
+                                                        <color key="titleColor" red="0.0" green="0.48606949910000002" blue="0.98388379810000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="nSP-1U-sWV" kind="push" identifier="gotohistory" id="mfF-zn-3gX"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsP-VO-dnW">
-                                                    <rect key="frame" x="-9" y="74" width="108" height="35"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsP-VO-dnW">
+                                                    <rect key="frame" x="5" y="128" width="128" height="49"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <state key="normal" title="Specialties">
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                                    <state key="normal" title="Specialties" image="present.png">
+                                                        <color key="titleColor" red="0.0" green="0.48606949910000002" blue="0.98388379810000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="xIs-EH-0Wy" kind="push" identifier="gotospecialties" id="HTW-12-gi5"/>
                                                     </connections>
                                                 </button>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="present.png" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-2b-rnK">
-                                                    <rect key="frame" x="20" y="12" width="60" height="54"/>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzN-Ag-MSm">
+                                                    <rect key="frame" x="70" y="9" width="159" height="58"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rzN-Ag-MSm">
-                                                    <rect key="frame" x="105" y="77" width="111" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="15"/>
-                                                    <state key="normal" title="General Info">
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                                    <state key="normal" title="General Info" image="info.png">
+                                                        <color key="titleColor" red="0.0" green="0.48606949910000002" blue="0.98388379810000004" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="m50-hd-8bF" kind="push" identifier="gotogeneralinfo" id="Wfr-3C-Ymo"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TC6-xW-xbJ">
+                                                    <rect key="frame" x="16" y="62" width="106" height="53"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                                    <state key="normal" title="Activities" image="walkingman.png">
+                                                        <color key="titleColor" red="0.0" green="0.48606949910000002" blue="0.98388379810000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="3r4-hZ-2oV" kind="push" identifier="gotoactivities" id="zfT-F9-hr1"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-VO-mDq">
+                                                    <rect key="frame" x="148" y="72" width="172" height="33"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="15"/>
+                                                    <state key="normal" title="Entertainment" image="mask.png">
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="m3E-4F-P8i" kind="push" identifier="gotoentertainment" id="41X-Hd-XJQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -869,6 +871,11 @@
                     <navigationItem key="navigationItem" id="klo-4Y-SkD"/>
                     <connections>
                         <outlet property="currentcityLabel" destination="497-qH-FfM" id="xfZ-ok-dX2"/>
+                        <outlet property="lawButton0" destination="2RW-L5-9dd" id="PfT-Fd-7i3"/>
+                        <outlet property="lawButton1" destination="sej-9i-f0n" id="em7-Mc-Auo"/>
+                        <outlet property="lawButton2" destination="wy4-bf-2rG" id="U7b-9L-2A8"/>
+                        <outlet property="lawButton3" destination="ygc-Ch-eCQ" id="Lpd-0V-lg4"/>
+                        <outlet property="lawButton4" destination="Ucx-K0-m6a" id="Odg-dz-Jge"/>
                         <outlet property="stateLabel" destination="nf4-z7-ueO" id="Khf-wL-X2i"/>
                         <outlet property="stateNicknameLabel" destination="FD2-DX-wMJ" id="7Fe-js-BpS"/>
                         <outlet property="statePopulationLabel" destination="vNi-Op-BVq" id="0iF-Fu-d9y"/>
@@ -946,7 +953,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.94443663768387265" green="1" blue="0.97232890849995079" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="0.8500000000000002" y="0.0" width="1" height="1"/>
-                                <string key="text">     I started creating this app on April 4th, 2014 for a class I took while in 10th Grade at 'Iolani School called "iPad App Design &amp; Development." Through this class I learned various new skills involving the computer world.  Ruby Processing, Xcode, Objective-C, and GitHub were just a few of the words I would become familiar with through this course.  With amazing help from Mr. &amp; Ms. Oba, I learned the neccessary skills to create this app.</string>
+                                <mutableString key="text">     I started creating this app on April 4th, 2014 for a class I took while in 10th Grade at 'Iolani School called "iPad App Design &amp; Development." Through this class I learned various new skills involving the computer world.  Ruby Processing, Xcode, Objective-C, and GitHub were just a few of the words I would become familiar with through this course.  With amazing help from Mr. &amp; Ms. Oba, I learned the neccessary skills to create this app.  This app was fueled by late nights while listening to 90-00s rap on Spotify.</mutableString>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1022,10 +1029,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gambling" width="46" height="40"/>
         <image name="info.png" width="40" height="36"/>
+        <image name="marijuana" width="50" height="50"/>
         <image name="mask.png" width="47" height="40"/>
+        <image name="phoneUse" width="40" height="40"/>
         <image name="present.png" width="40" height="49"/>
+        <image name="salesTax" width="40" height="40"/>
         <image name="scroll.png" width="52" height="40"/>
+        <image name="seatbelts" width="50" height="100"/>
         <image name="walkingman.png" width="40" height="40"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.48606949909890873" blue="0.98388379812240601" alpha="1" colorSpace="calibratedRGB"/>

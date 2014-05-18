@@ -1,50 +1,43 @@
 //
-//  Law+Create.m
+//  NPS+Create.m
 //  states
 //
-//  Created by Evan Miyaki on 5/8/14.
+//  Created by Evan Miyaki on 5/16/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
-#import "Law+Create.h"
+#import "NPS+Create.h"
 #import "State+Create.h"
 
-@implementation Law (Create)
+@implementation NPS (Create)
 
-+ (Law *)createLawForStateAbbreviation:(NSString *)stateAbbreviation displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext
++ (NPS *)createNPSInfoForStateAbbreviation:(NSString *)stateAbbreviation type:(NSString *)type displayText:(NSString *)displayText managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 {
     State *state = [State stateForAbbreviation:stateAbbreviation
                           managedObjectContext:managedObjectContext];
     
-    Law *law = nil;
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Law"];
+    NPS *nps = nil;
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"NPS"];
     request.predicate = [NSCompoundPredicate andPredicateWithSubpredicates:@[[NSPredicate predicateWithFormat:@"type = %@", type],[NSPredicate predicateWithFormat:@"state = %@", state]]];
     NSError *error;
     NSArray *matches = [managedObjectContext executeFetchRequest:request error:&error];
     
     if (!matches || ([matches count] > 1)) {
         // handle error
-        NSAssert(NO, @"wrong number of laws returned.");
+        NSAssert(NO, @"wrong number of national parks returned.");
         
     } else if (![matches count]) {
         NSLog(@"Creating new Law: %@ - %@", stateAbbreviation, displayText);
-        law = [NSEntityDescription insertNewObjectForEntityForName:@"Law"
+        nps = [NSEntityDescription insertNewObjectForEntityForName:@"NPS"
                                             inManagedObjectContext:managedObjectContext];
-        law.displayText = displayText;
-        law.type = type;
-        law.state = state;
+        NPS.displayText = displayText;
+        NPS.type = type;
+        NPS.state = state;
         
     } else {
-        law = [matches lastObject];
+        nps = [matches lastObject];
     }
-    return law;
+    return nps;
 };
-
-- (UIImage *)iconImage
-{
-    return [UIImage imageNamed:self.type];
-}
-
-
 
 @end

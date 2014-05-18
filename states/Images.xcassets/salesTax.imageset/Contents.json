@@ -3,7 +3,11 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Casino.png"
+      "filename" : "salesTax.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
     }
   ],
   "info" : {

@@ -36,7 +36,8 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.sinceLabel.text = [NSString stringWithFormat:@"%i", [self.state.since intValue]];
+    NSString *since = [self.state.since intValue] < 0 ? @"" : [self.state.since description];
+    self.sinceLabel.text = since;
     self.govLabel.text = self.state.governor;
     self.crimeLabel.text = self.state.crime;
 

@@ -10,7 +10,7 @@
 
 @implementation State (Create)
 
-+ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor sports:(NSString *)sports crime:(NSString *)crime themepark:(NSString *)themepark abbreviation:(NSString *)abbreviation managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor sports:(NSString *)sports crime:(NSString *)crime themepark:(NSString *)themepark abbreviation:(NSString *)abbreviation museums:(NSString *)museums shoppingcenters:(NSString *)shoppingcenters touristattractions:(NSString *)touristattractions managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 {
     State *state = nil;
     if ([name length]) {
@@ -38,6 +38,11 @@
             state.crime = crime;
             state.themepark = themepark;
             state.abbreviation = abbreviation;
+            state.museums = museums;
+            state.shoppingcenters = shoppingcenters;
+            state.touristattractions = touristattractions;
+            
+            
             
         } else {
             state = [matches lastObject];
@@ -90,5 +95,19 @@
     
     return state;
 }
+
+-(NSString *)populationWithCommas
+{
+    if (!self.population) return @"";
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc]init];
+    numberFormatter.locale = [NSLocale currentLocale];// this ensures the right separator behavior
+    numberFormatter.numberStyle = NSNumberFormatterDecimalStyle;
+    numberFormatter.usesGroupingSeparator = YES;
+    // example for writing the number object into a label
+    return [numberFormatter stringForObjectValue:self.population]; // your var name is not well chosen
+
+    
+}
+
 
 @end

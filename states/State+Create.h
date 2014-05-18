@@ -10,9 +10,12 @@
 
 @interface State (Create)
 
-+ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor sports:(NSString *)sports crime:(NSString *)crime themepark:(NSString *)themepark abbreviation:(NSString *)abbreviation managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (State *)createStateWithName:(NSString *)name population:(NSUInteger)population statenickname:(NSString *)statenickname history:(NSString *)history since:(NSUInteger)since governor:(NSString *)governor sports:(NSString *)sports crime:(NSString *)crime themepark:(NSString *)themepark abbreviation:(NSString *)abbreviation museums:(NSString *)museums shoppingcenters:(NSString *)shoppingcenters touristattractions:(NSString *)touristattractions managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 + (NSArray *)allStatesInManagedObjectContext:(NSManagedObjectContext *)context;
 
 + (State *)stateForAbbreviation:(NSString *)abbreviation managedObjectContext:(NSManagedObjectContext *)context;
+
+-(NSString *)populationWithCommas;
+
 
 @end

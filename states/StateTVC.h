@@ -13,5 +13,6 @@
 @interface StateTVC : UITableViewController <CLLocationManagerDelegate>
 @property(nonatomic, strong) State *state;
 @property (nonatomic, strong) NSManagedObjectContext *context;
+@property (nonatomic, assign) BOOL supressStateInfoUpdateBasedOnLocation;
 
 @end

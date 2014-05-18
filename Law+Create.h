@@ -11,7 +11,9 @@
 
 @interface Law (Create)
 
-+ (Law *)createLawForStateAbbreviation:(State *)state displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
++ (Law *)createLawForStateAbbreviation:(NSString *)stateAbbreviation displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
+
+- (UIImage *)iconImage;
 
 
 @end

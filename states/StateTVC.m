@@ -12,6 +12,7 @@
 #import "GITVC.h"
 #import "EntTVC.h"
 #import "ActTVC.h"
+#import "LawDataLoader.h"
 
 @interface StateTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *stateNicknameLabel;
@@ -21,8 +22,13 @@
 @property (nonatomic, strong) CLGeocoder *geocoder;
 @property (weak, nonatomic) IBOutlet UILabel *currentcityLabel;
 @property (weak, nonatomic) IBOutlet UILabel *stateLabel;
-
 @property (nonatomic, strong) CLPlacemark *placemark;
+@property (weak, nonatomic) IBOutlet UIButton *lawButton0;
+@property (weak, nonatomic) IBOutlet UIButton *lawButton1;
+@property (weak, nonatomic) IBOutlet UIButton *lawButton2;
+@property (weak, nonatomic) IBOutlet UIButton *lawButton3;
+@property (weak, nonatomic) IBOutlet UIButton *lawButton4;
+
 
 @end
 
@@ -38,6 +44,9 @@
 
 - (void)updatePlacemarkInfo
 {
+    if (self.supressStateInfoUpdateBasedOnLocation) {
+        return;
+    }
     NSString *stateAbbrev = [self.placemark.addressDictionary[@"State"] description];
     self.currentcityLabel.text = [self.placemark.addressDictionary[@"City"] description];
     
@@ -70,14 +79,28 @@
 {
     self.stateLabel.text = self.state.name;
     self.stateNicknameLabel.text = self.state.statenickname;
-    self.statePopulationLabel.text = [NSString stringWithFormat:@"%i", [self.state.population intValue]];
+    NSString *pop = [self.state populationWithCommas];
+    self.statePopulationLabel.text = [NSString stringWithFormat:@"Population: %@", pop];
+    NSArray *laws = [self.state.laws allObjects];
+    for (int i=0; i<5; i++) {
+        NSString *buttonProperty = [NSString stringWithFormat:@"lawButton%i", i];
+        UIButton *lawButton = (UIButton *)[self valueForKeyPath:buttonProperty];
+        if (i>=[laws count]) {
+            lawButton.alpha = 0;
+        }
+        else {
+            lawButton.alpha = 1;
+            Law *law = laws[i];
+            [lawButton setImage:[law iconImage] forState:UIControlStateNormal];
+
+        }
+    }
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
     [self updateStateInfo];
     
     if ([CLLocationManager locationServicesEnabled]) {
@@ -85,9 +108,6 @@
         self.locationManager.delegate = self;
         
         [self.locationManager startMonitoringSignificantLocationChanges];
-        
-        //        self.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
-        //        [self.locationManager startUpdatingLocation];
         
     } else {
         /* Location services are not enabled.
@@ -145,7 +165,7 @@
 }
 }
 
-- (void)changingNavigationControllerAndTableView:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     self.navigationController.navigationBar.hidden = YES;
     self.tableView.scrollEnabled = NO;

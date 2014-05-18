@@ -10,6 +10,7 @@
 
 @interface EntTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *sportsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *shoppingCenterLabel;
 
 
 @end
@@ -30,6 +31,7 @@
     [super viewDidLoad];
     
     self.sportsLabel.text = self.state.sports;
+    self.shoppingCenterLabel.text = self.state.shoppingcenters;
 
 }
 

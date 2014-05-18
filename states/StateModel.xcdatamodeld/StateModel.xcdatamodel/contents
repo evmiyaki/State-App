@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13C1021" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Law" representedClassName="Law" syncable="YES">
         <attribute name="displayText" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="laws" inverseEntity="State" syncable="YES"/>
+    </entity>
+    <entity name="NPS" representedClassName="NPS" syncable="YES">
+        <attribute name="displayText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="state" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="State" inverseName="nps" inverseEntity="State" syncable="YES"/>
     </entity>
     <entity name="State" representedClassName="State" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="crime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="governor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="museums" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="shoppingcenters" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="since" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="sports" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statenickname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="themepark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="touristattractions" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="laws" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Law" inverseName="state" inverseEntity="Law" syncable="YES"/>
+        <relationship name="nps" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPS" inverseName="state" inverseEntity="NPS" syncable="YES"/>
     </entity>
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>
-        <element name="State" positionX="-63" positionY="-18" width="128" height="208"/>
+        <element name="State" positionX="279" positionY="-459" width="128" height="268"/>
+        <element name="NPS" positionX="-63" positionY="-508" width="128" height="88"/>
     </elements>
 </model>

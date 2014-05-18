@@ -347,7 +347,7 @@
     [Law createLawForStateAbbreviation:@"WY" displayText:@"Phone use by those on permits while driving is illegal." type:@"phoneUse" managedObjectContext:context];
     [Law createLawForStateAbbreviation:@"WY" displayText:@"Secondary violation." type:@"seatbelts" managedObjectContext:context];
     [Law createLawForStateAbbreviation:@"WY" displayText:@"Gambling allowed on Indian reservations only." type:@"gambling" managedObjectContext:context];
-
+}
     
 
 

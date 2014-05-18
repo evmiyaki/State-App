@@ -3,7 +3,11 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tax.png"
+      "filename" : "gambling.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
     }
   ],
   "info" : {
