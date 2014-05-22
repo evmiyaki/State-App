@@ -21,6 +21,7 @@
         <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="shoppingcenters" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="since" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="slang" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sports" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statenickname" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="themepark" optional="YES" attributeType="String" syncable="YES"/>
@@ -31,6 +32,6 @@
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>
         <element name="NPS" positionX="-63" positionY="-508" width="128" height="88"/>
-        <element name="State" positionX="279" positionY="-459" width="128" height="285"/>
+        <element name="State" positionX="279" positionY="-459" width="128" height="300"/>
     </elements>
 </model>

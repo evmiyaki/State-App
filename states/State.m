@@ -2,7 +2,7 @@
 //  State.m
 //  states
 //
-//  Created by Evan Miyaki on 5/20/14.
+//  Created by Evan Miyaki on 5/21/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @dynamic abbreviation;
 @dynamic crime;
+@dynamic cuisine;
 @dynamic governor;
 @dynamic history;
 @dynamic museums;
@@ -26,7 +27,7 @@
 @dynamic statenickname;
 @dynamic themepark;
 @dynamic touristattractions;
-@dynamic cuisine;
+@dynamic slang;
 @dynamic laws;
 @dynamic nps;
 

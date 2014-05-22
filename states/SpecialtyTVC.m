@@ -10,6 +10,8 @@
 
 @interface SpecialtyTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *cuisineLabel;
+@property (weak, nonatomic) IBOutlet UILabel *slangLabel;
+
 
 @end
 
@@ -28,6 +30,7 @@
 {
     [super viewDidLoad];
     self.cuisineLabel.text = self.state.cuisine;
+    self.slangLabel.text = self.state.slang;
 
    }
 

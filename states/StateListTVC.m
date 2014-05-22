@@ -59,6 +59,8 @@
         StateTVC *stateTVC = (StateTVC *)segue.destinationViewController;
         stateTVC.state = state;
         stateTVC.supressStateInfoUpdateBasedOnLocation = YES;
+
+        
     }
 }
 
