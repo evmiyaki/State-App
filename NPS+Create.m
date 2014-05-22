@@ -30,9 +30,9 @@
         NSLog(@"Creating new Law: %@ - %@", stateAbbreviation, displayText);
         nps = [NSEntityDescription insertNewObjectForEntityForName:@"NPS"
                                             inManagedObjectContext:managedObjectContext];
-        NPS.displayText = displayText;
-        NPS.type = type;
-        NPS.state = state;
+        nps.displayText = displayText;
+        nps.type = type;
+        nps.state = state;
         
     } else {
         nps = [matches lastObject];

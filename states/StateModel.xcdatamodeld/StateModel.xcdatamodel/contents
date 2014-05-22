@@ -13,6 +13,7 @@
     <entity name="State" representedClassName="State" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="crime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cuisine" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="governor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="museums" optional="YES" attributeType="String" syncable="YES"/>
@@ -29,7 +30,7 @@
     </entity>
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>
-        <element name="State" positionX="279" positionY="-459" width="128" height="268"/>
         <element name="NPS" positionX="-63" positionY="-508" width="128" height="88"/>
+        <element name="State" positionX="279" positionY="-459" width="128" height="285"/>
     </elements>
 </model>

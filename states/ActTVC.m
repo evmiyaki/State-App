@@ -39,8 +39,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self updateActivityInfo];
-    
     
 
 }
@@ -50,4 +48,29 @@
     self.navigationController.navigationBar.hidden = NO;
 }
 
+#pragma mark - tableView
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString *identifier = nil;
+    if (indexPath.section == 0) {
+        identifier = @"touristattraction";
+    }
+    else if (indexPath.section == 1){
+        identifier = @"museum";
+    }
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
+    cell.textLabel.text = [NSString stringWithFormat:@"%li - %li", indexPath.section, (long)indexPath.row];
+    return cell;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 2;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
+}
 @end

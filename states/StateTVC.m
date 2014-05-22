@@ -13,6 +13,7 @@
 #import "EntTVC.h"
 #import "ActTVC.h"
 #import "LawDataLoader.h"
+#import "SpecialtyTVC.h"
 
 @interface StateTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *stateNicknameLabel;
@@ -160,6 +161,9 @@
         vc.state = self.state;
     } else if ([segue.identifier isEqualToString:@"gotoactivities"]) {
         ActTVC *vc = (ActTVC *)segue.destinationViewController;
+        vc.state = self.state;
+    } else if ([segue.identifier isEqualToString:@"gotospecialties"]) {
+        SpecialtyTVC *vc = (SpecialtyTVC *)segue.destinationViewController;
         vc.state = self.state;
     
 }
