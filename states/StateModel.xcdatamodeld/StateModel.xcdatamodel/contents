@@ -24,6 +24,7 @@
         <attribute name="slang" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="sports" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statenickname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="symbols" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="themepark" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="touristattractions" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="laws" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Law" inverseName="state" inverseEntity="Law" syncable="YES"/>
@@ -32,6 +33,6 @@
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>
         <element name="NPS" positionX="-63" positionY="-508" width="128" height="88"/>
-        <element name="State" positionX="279" positionY="-459" width="128" height="300"/>
+        <element name="State" positionX="279" positionY="-459" width="128" height="315"/>
     </elements>
 </model>

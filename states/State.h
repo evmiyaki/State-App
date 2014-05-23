@@ -2,7 +2,7 @@
 //  State.h
 //  states
 //
-//  Created by Evan Miyaki on 5/21/14.
+//  Created by Evan Miyaki on 5/22/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -23,11 +23,12 @@
 @property (nonatomic, retain) NSNumber * population;
 @property (nonatomic, retain) NSString * shoppingcenters;
 @property (nonatomic, retain) NSNumber * since;
+@property (nonatomic, retain) NSString * slang;
 @property (nonatomic, retain) NSString * sports;
 @property (nonatomic, retain) NSString * statenickname;
 @property (nonatomic, retain) NSString * themepark;
 @property (nonatomic, retain) NSString * touristattractions;
-@property (nonatomic, retain) NSString * slang;
+@property (nonatomic, retain) NSString * symbols;
 @property (nonatomic, retain) NSSet *laws;
 @property (nonatomic, retain) NPS *nps;
 @end
