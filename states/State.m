@@ -2,7 +2,7 @@
 //  State.m
 //  states
 //
-//  Created by Evan Miyaki on 5/22/14.
+//  Created by Evan Miyaki on 5/24/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -26,9 +26,17 @@
 @dynamic slang;
 @dynamic sports;
 @dynamic statenickname;
+@dynamic symbols;
 @dynamic themepark;
 @dynamic touristattractions;
-@dynamic symbols;
+@dynamic capital;
+@dynamic cities;
+@dynamic residents;
+@dynamic geography;
+@dynamic indigenous;
+@dynamic races;
+@dynamic economy;
+@dynamic folklore;
 @dynamic laws;
 @dynamic nps;
 

@@ -11,6 +11,8 @@
 @interface SpecialtyTVC ()
 @property (weak, nonatomic) IBOutlet UILabel *cuisineLabel;
 @property (weak, nonatomic) IBOutlet UILabel *slangLabel;
+@property (weak, nonatomic) IBOutlet UILabel *symbolLabel;
+@property (weak, nonatomic) IBOutlet UILabel *folkloreLabel;
 
 
 @end
@@ -31,6 +33,8 @@
     [super viewDidLoad];
     self.cuisineLabel.text = self.state.cuisine;
     self.slangLabel.text = self.state.slang;
+    self.symbolLabel.text = self.state.symbols;
+    self.folkloreLabel.text = self.state.folklore;
 
    }
 

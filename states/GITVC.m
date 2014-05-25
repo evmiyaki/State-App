@@ -13,6 +13,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *sinceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *govLabel;
 @property (weak, nonatomic) IBOutlet UILabel *crimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *capitalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *geographyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *indigenousLabel;
+@property (weak, nonatomic) IBOutlet UILabel *racesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *economyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *residentsLabel;
 
 @end
 
@@ -40,6 +47,16 @@
     self.sinceLabel.text = since;
     self.govLabel.text = self.state.governor;
     self.crimeLabel.text = self.state.crime;
+    self.capitalLabel.text = self.state.capital;
+    self.geographyLabel.text = self.state.geography;
+    self.cityLabel.text = self.state.cities;
+    self.indigenousLabel.text = self.state.indigenous;
+    self.racesLabel.text = self.state.races;
+    self.economyLabel.text = self.state.economy;
+    self.residentsLabel.text = self.state.residents;
+    
+    
+    
 
 
 }

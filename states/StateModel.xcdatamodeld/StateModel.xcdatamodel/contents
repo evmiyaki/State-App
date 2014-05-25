@@ -12,13 +12,21 @@
     </entity>
     <entity name="State" representedClassName="State" syncable="YES">
         <attribute name="abbreviation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="capital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cities" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="crime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="cuisine" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="economy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="folklore" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="geography" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="governor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="history" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indigenous" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="museums" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="races" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="residents" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shoppingcenters" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="since" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="slang" optional="YES" attributeType="String" syncable="YES"/>
@@ -33,6 +41,6 @@
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>
         <element name="NPS" positionX="-63" positionY="-508" width="128" height="88"/>
-        <element name="State" positionX="279" positionY="-459" width="128" height="315"/>
+        <element name="State" positionX="279" positionY="-459" width="128" height="435"/>
     </elements>
 </model>
