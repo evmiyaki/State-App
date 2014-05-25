@@ -3,7 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "tax.png"
+      "filename" : "marijuana.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "marijuanax2.png"
     }
   ],
   "info" : {

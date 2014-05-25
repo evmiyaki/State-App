@@ -13,6 +13,13 @@
 @property (weak, nonatomic) IBOutlet UILabel *sinceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *govLabel;
 @property (weak, nonatomic) IBOutlet UILabel *crimeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *capitalLabel;
+@property (weak, nonatomic) IBOutlet UILabel *geographyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *indigenousLabel;
+@property (weak, nonatomic) IBOutlet UILabel *racesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *economyLabel;
+@property (weak, nonatomic) IBOutlet UILabel *residentsLabel;
 
 @end
 
@@ -36,9 +43,20 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.sinceLabel.text = [NSString stringWithFormat:@"%i", [self.state.since intValue]];
+    NSString *since = [self.state.since intValue] < 0 ? @"" : [self.state.since description];
+    self.sinceLabel.text = since;
     self.govLabel.text = self.state.governor;
     self.crimeLabel.text = self.state.crime;
+    self.capitalLabel.text = self.state.capital;
+    self.geographyLabel.text = self.state.geography;
+    self.cityLabel.text = self.state.cities;
+    self.indigenousLabel.text = self.state.indigenous;
+    self.racesLabel.text = self.state.races;
+    self.economyLabel.text = self.state.economy;
+    self.residentsLabel.text = self.state.residents;
+    
+    
+    
 
 
 }

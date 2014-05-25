@@ -13,4 +13,7 @@
 
 + (Law *)createLawForStateAbbreviation:(NSString *)stateAbbreviation displayText:(NSString *)displayText type:(NSString *)type managedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 
+- (UIImage *)iconImage;
+
+
 @end

@@ -3,7 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "seat_belt_required_sign.jpg.png"
+      "filename" : "salesTax.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "salesTaxx2.png"
     }
   ],
   "info" : {

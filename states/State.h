@@ -2,28 +2,43 @@
 //  State.h
 //  states
 //
-//  Created by Evan Miyaki on 5/9/14.
+//  Created by Evan Miyaki on 5/24/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class Law;
+@class Law, NPS;
 
 @interface State : NSManagedObject
 
 @property (nonatomic, retain) NSString * abbreviation;
 @property (nonatomic, retain) NSString * crime;
+@property (nonatomic, retain) NSString * cuisine;
 @property (nonatomic, retain) NSString * governor;
 @property (nonatomic, retain) NSString * history;
+@property (nonatomic, retain) NSString * museums;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * population;
+@property (nonatomic, retain) NSString * shoppingcenters;
 @property (nonatomic, retain) NSNumber * since;
+@property (nonatomic, retain) NSString * slang;
 @property (nonatomic, retain) NSString * sports;
 @property (nonatomic, retain) NSString * statenickname;
+@property (nonatomic, retain) NSString * symbols;
 @property (nonatomic, retain) NSString * themepark;
-@property (nonatomic, retain) NSSet * laws;
+@property (nonatomic, retain) NSString * touristattractions;
+@property (nonatomic, retain) NSString * capital;
+@property (nonatomic, retain) NSString * cities;
+@property (nonatomic, retain) NSString * residents;
+@property (nonatomic, retain) NSString * geography;
+@property (nonatomic, retain) NSString * indigenous;
+@property (nonatomic, retain) NSString * races;
+@property (nonatomic, retain) NSString * economy;
+@property (nonatomic, retain) NSString * folklore;
+@property (nonatomic, retain) NSSet *laws;
+@property (nonatomic, retain) NPS *nps;
 @end
 
 @interface State (CoreDataGeneratedAccessors)
