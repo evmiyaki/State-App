@@ -8,10 +8,7 @@
 
 #import "LawTVC.h"
 #import "Law+Create.h"
-<<<<<<< HEAD
-=======
 #import "LawDetailCell.h"
->>>>>>> FETCH_HEAD
 
 static NSString *kLawDetailCellId = @"Law Detail Cell";
 
@@ -38,8 +35,6 @@ static NSString *kLawDetailCellId = @"Law Detail Cell";
         [self.tableView selectRowAtIndexPath:path
                                     animated:YES
                               scrollPosition:UITableViewScrollPositionTop];
-    }
-}
     }
 }
 

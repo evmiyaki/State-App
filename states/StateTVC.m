@@ -179,8 +179,11 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-//    self.navigationController.navigationBar.hidden = YES;
     self.tableView.scrollEnabled = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:1.0f/255.0f green:140.0f/255.0f blue:255.0f/255.0f alpha:1.0];
+    NSFontAttributeName: [UIFont fontWithName:@"Helvetica" size:120.0f];
+    
+
   
 }
 
