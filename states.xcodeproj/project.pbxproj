@@ -49,6 +49,8 @@
 		BFF5AB51191853000019C483 /* GITVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB50191853000019C483 /* GITVC.m */; };
 		BFF5AB54191854ED0019C483 /* HistoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF5AB53191854ED0019C483 /* HistoryVC.m */; };
 		CF5A3263191B30720078AD31 /* StateDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5A3262191B30720078AD31 /* StateDataLoader.m */; };
+		CFF2423B1935AA42007EFCF4 /* LawDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF2423A1935AA42007EFCF4 /* LawDetailCell.m */; };
+		CFF2423D1935AA59007EFCF4 /* LawDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFF2423C1935AA59007EFCF4 /* LawDetailCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +130,9 @@
 		BFF5AB53191854ED0019C483 /* HistoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryVC.m; sourceTree = "<group>"; };
 		CF5A3261191B30720078AD31 /* StateDataLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDataLoader.h; sourceTree = "<group>"; };
 		CF5A3262191B30720078AD31 /* StateDataLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateDataLoader.m; sourceTree = "<group>"; };
+		CFF242391935AA42007EFCF4 /* LawDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawDetailCell.h; sourceTree = "<group>"; };
+		CFF2423A1935AA42007EFCF4 /* LawDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawDetailCell.m; sourceTree = "<group>"; };
+		CFF2423C1935AA59007EFCF4 /* LawDetailCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LawDetailCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +185,9 @@
 				BFF5AB50191853000019C483 /* GITVC.m */,
 				BF0F74251935567F007CD45C /* LawTVC.h */,
 				BF0F74261935567F007CD45C /* LawTVC.m */,
+				CFF242391935AA42007EFCF4 /* LawDetailCell.h */,
+				CFF2423A1935AA42007EFCF4 /* LawDetailCell.m */,
+				CFF2423C1935AA59007EFCF4 /* LawDetailCell.xib */,
 				BF898AE81909CEA50088A531 /* StateListTVC.h */,
 				BF898AE91909CEA50088A531 /* StateListTVC.m */,
 				BF898AE61909CAAD0088A531 /* NavigationTVC.m */,
@@ -391,6 +399,7 @@
 				BF34761619088B3C00A45F6F /* scroll.png in Resources */,
 				BF841C3D18EE1DE6009F207F /* Main.storyboard in Resources */,
 				BF34760E190889B500A45F6F /* mask.png in Resources */,
+				CFF2423D1935AA59007EFCF4 /* LawDetailCell.xib in Resources */,
 				BF34761419088B3600A45F6F /* present.png in Resources */,
 				BF34761A19088B4A00A45F6F /* ticket.png in Resources */,
 			);
@@ -412,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFAB59061926CE7C00676EBE /* NPSDataLoader.m in Sources */,
+				CFF2423B1935AA42007EFCF4 /* LawDetailCell.m in Sources */,
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
 				BF0F74271935567F007CD45C /* LawTVC.m in Sources */,
 				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,

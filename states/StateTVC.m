@@ -12,6 +12,7 @@
 #import "GITVC.h"
 #import "EntTVC.h"
 #import "ActTVC.h"
+#import "LawTVC.h"
 #import "LawDataLoader.h"
 #import "SpecialtyTVC.h"
 
@@ -29,7 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *lawButton2;
 @property (weak, nonatomic) IBOutlet UIButton *lawButton3;
 @property (weak, nonatomic) IBOutlet UIButton *lawButton4;
-
+@property (strong, nonatomic) NSArray *laws;
 
 @end
 
@@ -82,16 +83,17 @@
     self.stateNicknameLabel.text = self.state.statenickname;
     NSString *pop = [self.state populationWithCommas];
     self.statePopulationLabel.text = [NSString stringWithFormat:@"Population: %@", pop];
-    NSArray *laws = [self.state.laws allObjects];
+    self.laws = [self.state.laws allObjects];
     for (int i=0; i<5; i++) {
         NSString *buttonProperty = [NSString stringWithFormat:@"lawButton%i", i];
         UIButton *lawButton = (UIButton *)[self valueForKeyPath:buttonProperty];
-        if (i>=[laws count]) {
+        if (i>=[self.laws count]) {
             lawButton.alpha = 0;
         }
         else {
             lawButton.alpha = 1;
-            Law *law = laws[i];
+            lawButton.tag = i;
+            Law *law = self.laws[i];
             [lawButton setImage:[law iconImage] forState:UIControlStateNormal];
 
         }
@@ -165,8 +167,14 @@
     } else if ([segue.identifier isEqualToString:@"gotospecialties"]) {
         SpecialtyTVC *vc = (SpecialtyTVC *)segue.destinationViewController;
         vc.state = self.state;
-    
-}
+    } else if ([segue.identifier isEqualToString:@"gotolawdetails"]) {
+        NSLog(@"Go to Law Detail");
+        LawTVC *vc = (LawTVC *)segue.destinationViewController;
+        vc.laws = self.laws;
+        if ([sender isKindOfClass:[UIButton class]]) {
+            vc.selectedLawIndexNum = @([(UIButton *)sender tag]);
+        }
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
