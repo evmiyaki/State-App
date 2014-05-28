@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF0D435C19194EBE00C29101 /* EntTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0D435B19194EBE00C29101 /* EntTVC.m */; };
+		BF0F74271935567F007CD45C /* LawTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F74261935567F007CD45C /* LawTVC.m */; };
 		BF117809192C55DD00BC0D4A /* SpecialtyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = BF117808192C55DD00BC0D4A /* SpecialtyTVC.m */; };
 		BF34760E190889B500A45F6F /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = BF34760D190889B500A45F6F /* mask.png */; };
 		BF34761219088B2D00A45F6F /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = BF34761119088B2D00A45F6F /* info.png */; };
@@ -63,6 +64,8 @@
 /* Begin PBXFileReference section */
 		BF0D435A19194EBE00C29101 /* EntTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntTVC.h; sourceTree = "<group>"; };
 		BF0D435B19194EBE00C29101 /* EntTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntTVC.m; sourceTree = "<group>"; };
+		BF0F74251935567F007CD45C /* LawTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawTVC.h; sourceTree = "<group>"; };
+		BF0F74261935567F007CD45C /* LawTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawTVC.m; sourceTree = "<group>"; };
 		BF117807192C55DD00BC0D4A /* SpecialtyTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialtyTVC.h; sourceTree = "<group>"; };
 		BF117808192C55DD00BC0D4A /* SpecialtyTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialtyTVC.m; sourceTree = "<group>"; };
 		BF34760D190889B500A45F6F /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				BF0D435B19194EBE00C29101 /* EntTVC.m */,
 				BFF5AB4F191853000019C483 /* GITVC.h */,
 				BFF5AB50191853000019C483 /* GITVC.m */,
+				BF0F74251935567F007CD45C /* LawTVC.h */,
+				BF0F74261935567F007CD45C /* LawTVC.m */,
 				BF898AE81909CEA50088A531 /* StateListTVC.h */,
 				BF898AE91909CEA50088A531 /* StateListTVC.m */,
 				BF898AE61909CAAD0088A531 /* NavigationTVC.m */,
@@ -408,6 +413,7 @@
 			files = (
 				BFAB59061926CE7C00676EBE /* NPSDataLoader.m in Sources */,
 				BF898AE71909CAAD0088A531 /* NavigationTVC.m in Sources */,
+				BF0F74271935567F007CD45C /* LawTVC.m in Sources */,
 				BFF363511919A1AC00E555C2 /* StateModel.xcdatamodeld in Sources */,
 				BFDCEE6A1931CEE8001258F3 /* State.m in Sources */,
 				BFF36356191A0C9E00E555C2 /* ActTVC.m in Sources */,
