@@ -8,37 +8,53 @@
 
 #import "LawTVC.h"
 #import "Law+Create.h"
+#import "LawDetailCell.h"
+
+static NSString *kLawDetailCellId = @"Law Detail Cell";
 
 @interface LawTVC ()
-@property (strong, nonatomic) NSArray *salesTax;
-@property (strong, nonatomic) NSArray *marijuana;
-@property (strong, nonatomic) NSArray *phoneUse;
-@property (strong, nonatomic) NSArray *seatBelts;
-@property (strong, nonatomic) NSArray *gambling;
-
-
-
-
+@property (nonatomic, strong) NSArray *laws;
 @end
 
 @implementation LawTVC
 
--(void)viewDidLoad
+- (void)setState:(State *)state
 {
-    NSArray *laws = [self.state.laws allObjects];
-    for (int i=0; i<5; i++) {
-        NSString *buttonProperty = [NSString stringWithFormat:@"lawButton%i", i];
-        UIButton *lawButton = (UIButton *)[self valueForKeyPath:buttonProperty];
-        if (i>=[laws count]) {
-            lawButton.alpha = 0;
-        }
-        else {
-            lawButton.alpha = 1;
-            Law *law = laws[i];
-            [lawButton setImage:[law iconImage] forState:UIControlStateNormal];
-        }
+    if (_state != state) {
+        _state = state;
+        self.laws = [self.state.laws allObjects];
     }
 }
+
+-(void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"LawDetailCell" bundle:nil]
+         forCellReuseIdentifier:kLawDetailCellId];
+}
+
+
+#pragma mark - Table View Data Source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.laws count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LawDetailCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kLawDetailCellId];
+    cell.law = self.laws[indexPath.row];
+    return cell;
+}
+
+
 
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "State.h"
+@class State;
 
 @interface LawTVC : UITableViewController
 @property(nonatomic, strong) State *state;

@@ -12,6 +12,7 @@
 #import "GITVC.h"
 #import "EntTVC.h"
 #import "ActTVC.h"
+#import "LawTVC.h"
 #import "LawDataLoader.h"
 #import "SpecialtyTVC.h"
 
@@ -165,8 +166,11 @@
     } else if ([segue.identifier isEqualToString:@"gotospecialties"]) {
         SpecialtyTVC *vc = (SpecialtyTVC *)segue.destinationViewController;
         vc.state = self.state;
-    
-}
+    } else if ([segue.identifier isEqualToString:@"gotolawdetails"]) {
+        NSLog(@"Go to Law Detail");
+        LawTVC *vc = (LawTVC *)segue.destinationViewController;
+        vc.state = self.state;
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated
