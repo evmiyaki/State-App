@@ -7,6 +7,7 @@
 //
 
 #import "LawTVC.h"
+#import "Law+Create.h"
 
 @interface LawTVC ()
 @property (strong, nonatomic) NSArray *salesTax;
@@ -35,8 +36,8 @@
             lawButton.alpha = 1;
             Law *law = laws[i];
             [lawButton setImage:[law iconImage] forState:UIControlStateNormal];
-            
-
+        }
+    }
 }
 
 
