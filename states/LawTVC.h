@@ -10,6 +10,6 @@
 @class State;
 
 @interface LawTVC : UITableViewController
-@property(nonatomic, strong) State *state;
-
+@property (nonatomic, strong) NSArray *laws;
+@property (nonatomic, strong) NSNumber *selectedLawIndexNum;
 @end

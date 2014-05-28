@@ -785,7 +785,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="p8x-3x-HJO" kind="push" id="4Oz-KN-jR4"/>
+                                                        <segue destination="p8x-3x-HJO" kind="push" identifier="gotolawdetails" id="4Oz-KN-jR4"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sej-9i-f0n">
@@ -795,7 +795,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="p8x-3x-HJO" kind="push" id="URn-GA-V1Q"/>
+                                                        <segue destination="p8x-3x-HJO" kind="push" identifier="gotolawdetails" id="URn-GA-V1Q"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ygc-Ch-eCQ">
@@ -805,7 +805,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="p8x-3x-HJO" kind="push" id="pfM-U0-NDc"/>
+                                                        <segue destination="p8x-3x-HJO" kind="push" identifier="gotolawdetails" id="pfM-U0-NDc"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2RW-L5-9dd">
@@ -815,7 +815,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="p8x-3x-HJO" kind="push" id="MRJ-PE-2hL"/>
+                                                        <segue destination="p8x-3x-HJO" kind="push" identifier="gotolawdetails" id="MRJ-PE-2hL"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wy4-bf-2rG">
@@ -825,7 +825,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="p8x-3x-HJO" kind="push" id="xzX-Mb-Vqb"/>
+                                                        <segue destination="p8x-3x-HJO" kind="push" identifier="gotolawdetails" id="xzX-Mb-Vqb"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1091,6 +1091,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="q4c-JT-17V"/>
-        <segue reference="4Oz-KN-jR4"/>
+        <segue reference="QvL-HY-xpZ"/>
     </inferredMetricsTieBreakers>
 </document>

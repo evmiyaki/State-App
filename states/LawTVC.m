@@ -13,18 +13,10 @@
 static NSString *kLawDetailCellId = @"Law Detail Cell";
 
 @interface LawTVC ()
-@property (nonatomic, strong) NSArray *laws;
+
 @end
 
 @implementation LawTVC
-
-- (void)setState:(State *)state
-{
-    if (_state != state) {
-        _state = state;
-        self.laws = [self.state.laws allObjects];
-    }
-}
 
 -(void)viewDidLoad
 {
@@ -32,6 +24,18 @@ static NSString *kLawDetailCellId = @"Law Detail Cell";
     
     [self.tableView registerNib:[UINib nibWithNibName:@"LawDetailCell" bundle:nil]
          forCellReuseIdentifier:kLawDetailCellId];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (self.selectedLawIndexNum) {
+        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.selectedLawIndexNum integerValue]
+                                               inSection:0];
+        [self.tableView selectRowAtIndexPath:path
+                                    animated:YES
+                              scrollPosition:UITableViewScrollPositionTop];
+    }
 }
 
 
