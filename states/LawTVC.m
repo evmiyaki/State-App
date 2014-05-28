@@ -8,16 +8,14 @@
 
 #import "LawTVC.h"
 #import "Law+Create.h"
+<<<<<<< HEAD
+=======
+#import "LawDetailCell.h"
+>>>>>>> FETCH_HEAD
+
+static NSString *kLawDetailCellId = @"Law Detail Cell";
 
 @interface LawTVC ()
-@property (strong, nonatomic) NSArray *salesTax;
-@property (strong, nonatomic) NSArray *marijuana;
-@property (strong, nonatomic) NSArray *phoneUse;
-@property (strong, nonatomic) NSArray *seatBelts;
-@property (strong, nonatomic) NSArray *gambling;
-
-
-
 
 @end
 
@@ -25,22 +23,47 @@
 
 -(void)viewDidLoad
 {
-    NSArray *laws = [self.state.laws allObjects];
-    for (int i=0; i<5; i++) {
-        NSString *buttonProperty = [NSString stringWithFormat:@"lawButton%i", i];
-        UIButton *lawButton = (UIButton *)[self valueForKeyPath:buttonProperty];
-        if (i>=[laws count]) {
-            lawButton.alpha = 0;
-        }
-        else {
-            lawButton.alpha = 1;
-            Law *law = laws[i];
-            [lawButton setImage:[law iconImage] forState:UIControlStateNormal];
-            
+    [super viewDidLoad];
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"LawDetailCell" bundle:nil]
+         forCellReuseIdentifier:kLawDetailCellId];
+}
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (self.selectedLawIndexNum) {
+        NSIndexPath *path = [NSIndexPath indexPathForRow:[self.selectedLawIndexNum integerValue]
+                                               inSection:0];
+        [self.tableView selectRowAtIndexPath:path
+                                    animated:YES
+                              scrollPosition:UITableViewScrollPositionTop];
+    }
 }
     }
 }
+
+
+#pragma mark - Table View Data Source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.laws count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LawDetailCell *cell = [self.tableView dequeueReusableCellWithIdentifier:kLawDetailCellId];
+    cell.law = self.laws[indexPath.row];
+    return cell;
+}
+
+
 
 
 @end
