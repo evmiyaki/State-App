@@ -47,7 +47,6 @@
     self.museums = [state.museums componentsSeparatedByString:@"\n"];
     self.themeparks = [state.themepark componentsSeparatedByString:@"\n"];
     [self setUpNationalParks];
-    NSLog(@"parks %@", self.parks);
 }
 
 
@@ -77,7 +76,9 @@
     }
     else if (indexPath.section == 3){
         identifier = @"parks";
-        labelText = self.parks[indexPath.row];
+        
+        NPS *np = self.parks[indexPath.row];
+        labelText = np.displayText;
     }
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     cell.textLabel.text = labelText;
