@@ -1060,7 +1060,7 @@
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rsa-XU-Q4G">
                                             <rect key="frame" x="15" y="0.0" width="270" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1101,15 +1101,15 @@
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZ9-8I-YYy">
                                 <rect key="frame" x="112" y="20" width="154" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="36"/>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="36"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-Gn-GEu">
                                 <rect key="frame" x="40" y="85" width="240" height="405"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">     I started creating this app on April 4th, 2014 for a class I took while in 10th Grade at 'Iolani School called "iPad App Design &amp; Development." Through this class I learned various new skills involving the computer world.  Ruby Processing, Xcode, Objective-C, and GitHub were just a few of the words I would become familiar with through this course.  With amazing help from Mr. &amp; Ms. Oba, I learned the neccessary skills to create this app.  This app was fueled by late nights while listening to 90-00s rap on Spotify.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <mutableString key="text">     I started creating this app on April 4th, 2014 for a class I took while in 10th Grade at 'Iolani School called "iPad App Design &amp; Development." Through this class I learned various new skills involving the computer world.  Ruby Processing, Xcode, Objective-C, and GitHub were just a few of the words I would become familiar with through this course.  With amazing help from Mr. &amp; Ms. Oba, I learned the neccessary skills to create this app.  Through a lot of long nights typing in information and attempting to code came this app, Wayfarer.  </mutableString>
+                                <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1212,7 +1212,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="blX-rA-vE0"/>
+        <segue reference="q4c-JT-17V"/>
         <segue reference="QvL-HY-xpZ"/>
     </inferredMetricsTieBreakers>
 </document>
