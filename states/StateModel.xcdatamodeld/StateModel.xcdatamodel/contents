@@ -36,7 +36,7 @@
         <attribute name="themepark" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="touristattractions" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="laws" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Law" inverseName="state" inverseEntity="Law" syncable="YES"/>
-        <relationship name="nps" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="NPS" inverseName="state" inverseEntity="NPS" syncable="YES"/>
+        <relationship name="nps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="NPS" inverseName="state" inverseEntity="NPS" syncable="YES"/>
     </entity>
     <elements>
         <element name="Law" positionX="-261" positionY="-225" width="128" height="88"/>

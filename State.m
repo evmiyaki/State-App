@@ -2,7 +2,7 @@
 //  State.m
 //  states
 //
-//  Created by Evan Miyaki on 5/24/14.
+//  Created by Evan Miyaki on 5/28/14.
 //  Copyright (c) 2014 chicagobulls. All rights reserved.
 //
 
@@ -14,13 +14,21 @@
 @implementation State
 
 @dynamic abbreviation;
+@dynamic capital;
+@dynamic cities;
 @dynamic crime;
 @dynamic cuisine;
+@dynamic economy;
+@dynamic folklore;
+@dynamic geography;
 @dynamic governor;
 @dynamic history;
+@dynamic indigenous;
 @dynamic museums;
 @dynamic name;
 @dynamic population;
+@dynamic races;
+@dynamic residents;
 @dynamic shoppingcenters;
 @dynamic since;
 @dynamic slang;
@@ -29,14 +37,6 @@
 @dynamic symbols;
 @dynamic themepark;
 @dynamic touristattractions;
-@dynamic capital;
-@dynamic cities;
-@dynamic residents;
-@dynamic geography;
-@dynamic indigenous;
-@dynamic races;
-@dynamic economy;
-@dynamic folklore;
 @dynamic laws;
 @dynamic nps;
 

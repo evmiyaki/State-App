@@ -8,11 +8,15 @@
 
 #import "ActTVC.h"
 #import "NPSDataLoader.h"
+#import "State.h"
+#import "NPS.h"
 
 @interface ActTVC ()
 @property (strong, nonatomic) NSArray *touristAttractions;
 @property (strong, nonatomic) NSArray *museums;
 @property (strong, nonatomic) NSArray *themeparks;
+@property (strong, nonatomic) NSArray *parks;
+
 
 @end
 
@@ -27,27 +31,32 @@
     return self;
 }
 
+-(void)setUpNationalParks
+{
+    NSArray *allNPS = [self.state.nps allObjects];
+    NSIndexSet *matches = [allNPS indexesOfObjectsPassingTest:^BOOL(NPS *nationalPark, NSUInteger idx, BOOL *stop) {
+        return [nationalPark.type isEqualToString:@"parks"];
+    }];
+    self.parks = [allNPS objectsAtIndexes:matches];
+}
+
 -(void)setState:(State *)state
 {
     _state = state;
     self.touristAttractions = [state.touristattractions componentsSeparatedByString:@","];
     self.museums = [state.museums componentsSeparatedByString:@"\n"];
     self.themeparks = [state.themepark componentsSeparatedByString:@"\n"];
-  
+    [self setUpNationalParks];
+    NSLog(@"parks %@", self.parks);
 }
 
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    self.navigationController.navigationBar.hidden = NO;
-}
+
 
 #pragma mark - tableView
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -66,6 +75,10 @@
         identifier = @"themepark";
         labelText = self.themeparks[indexPath.row];
     }
+    else if (indexPath.section == 3){
+        identifier = @"parks";
+        labelText = self.parks[indexPath.row];
+    }
     UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:identifier];
     cell.textLabel.text = labelText;
     return cell;
@@ -73,7 +86,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -84,7 +97,9 @@
         return [self.museums count];
     }else if (section == 2){
             return [self.themeparks count];
-    } else {
+    }else if (section == 3){
+        return [self.parks count];
+    }else {
         return 0;
     };
 }
@@ -97,7 +112,9 @@
         return @"Museums";
     }else if (section == 2){
             return @"Theme Parks";
-    } else {
+    }else if (section == 3){
+            return @"National Parks";
+    }else {
         return @"misc.";
     }
 }

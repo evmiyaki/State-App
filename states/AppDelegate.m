@@ -11,6 +11,7 @@
 #import "StateDataLoader.h"
 #import "StateTVC.h"
 #import "LawDataLoader.h"
+#import "NPSDataLoader.h"
 
 @implementation AppDelegate
 
@@ -28,7 +29,7 @@
         self.managedObjectContext = self.document.managedObjectContext;
         [StateDataLoader loadStateDataWithManagedObjectContext:self.managedObjectContext];
         [LawDataLoader loadLawDataWithManagedObjectContext:self.managedObjectContext];
-        
+        [NPSDataLoader loadNPSDataWithManagedObjectContext:self.managedObjectContext];
         StateTVC *vc = [self initialVC];
         vc.context = self.managedObjectContext;
     }
